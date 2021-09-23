@@ -1,5 +1,6 @@
 // pages/songDetail/songDetail.js
 import PubSub from "pubsub-js"
+import moment from "moment-js"
 import requset from "../../utils/request"
 
 const appInstance=getApp().globalData
@@ -15,8 +16,9 @@ Page({
     songUrl: "",
     title: "",
     author: "",
-    liveTime:"",
-    duration:""
+    liveTime:"00:00",
+    duration:"00:00",
+    currentWidth:0
   },
 
   /**
@@ -37,12 +39,15 @@ Page({
     
     if(!appInstance.countPlay++){
       //若退出songDetail再重进播放的是同亿歌曲无需重复发请求
-      await this.getSongPlay(this.data.id)
+     //console.log("fsdfsfsfs");
+     await this.getSongPlay(this.data.id)
       //保存2次若为同一首歌的url
       appInstance.songUrl=this.data.songUrl
       this.handleMusicPlay()
+      //backgroundAudioManager设置src就会自动播放，要放在判断里面
+      this.setMusicInstance()
     }
-    this.setMusicInstance()
+    
     /**
      * 监视系统背景下播放暂停回调
      */
@@ -52,16 +57,26 @@ Page({
       appInstance.musicId=this.data.id
     })
     this.backgroundAudioManager.onStop(()=>this.changePlayState(false))
+    this.backgroundAudioManager.onTimeUpdate(()=>{
+      let liveTime=moment(this.backgroundAudioManager.currentTime).format("mm:ss")
+      let currentWidth=this.backgroundAudioManager.currentTime/this.backgroundAudioManager.duration*100
+      this.setData({
+        liveTime,
+        currentWidth
+      })
+    });
     this.backgroundAudioManager.onEnded(()=>{
-      this.changePlayState(false)
-      // this.handleSwitch("next")
+      //this.changePlayState(false)
+      this. pubsubMsg("next")
+      this.setData({
+        liveTime:"00:00",
+        currentWidth:0
+      })
     })
   },
   //获取上个页面传递的音乐详情
   getSongDetail() {
     const eventChannel = this.getOpenerEventChannel()
-
-    // 监听acceptDataFromOpenerPage事件，获取上一页面通过eventChannel传送到当前页面的数据
     eventChannel.on('sendSongDetail', data => {
       //console.log(data);
       const musicInfo=data.data
@@ -70,8 +85,8 @@ Page({
   },
   setMusicInfo(musicInfo){
     let picUrl = musicInfo.album.picUrl
-    let {id,artists,name:title} = musicInfo
-    
+    let {id,artists,name:title,} = musicInfo
+    let duration=moment(musicInfo.duration/1000).format("mm:ss")
     let author = ""
     artists.length == 1?author = artists[0].name
     :author = artists[0].name + "/" + artists[1].name
@@ -80,7 +95,8 @@ Page({
       picUrl,
       author,
       id,
-      title
+      title,
+      duration
     })
   },
   setMusicInstance(){
@@ -92,6 +108,7 @@ Page({
   },
   //修改播放状态的功能函数
   changePlayState(isPlay){
+    console.log("状态改变"+isPlay);
     this.setData({isPlay})
     appInstance.isMusicPlay=isPlay
     
@@ -110,6 +127,9 @@ Page({
     
     const type=e.currentTarget.id
     //backgroundAudioManager.stop()
+   this. pubsubMsg(type)
+  },
+  pubsubMsg(type){
     PubSub.subscribe("musicInfo",async (_,musicInfo)=>{
       this.setMusicInfo(musicInfo)
       await this.getSongPlay(musicInfo.id)

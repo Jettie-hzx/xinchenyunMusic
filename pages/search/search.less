@@ -1,0 +1,117 @@
+.searchContainer{
+    padding: 0 20rpx;
+}
+.header{
+    height: 80rpx;
+    display: flex;
+    //border: 1px solid red;
+    font-size: 38rpx;
+    line-height: 80rpx;
+    .searchInput{
+        flex: 1;
+        position: relative;
+        
+        .searchIcon{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            
+        }
+        input{
+            margin: 0 40rpx 0 60rpx;
+            height: 80rpx;
+            border-bottom: 1rpx solid #333;
+        }
+        .clearImg{
+            position: absolute;
+            right: 30rpx;
+            top: 15rpx;
+            width: 50rpx;
+            height: 50rpx;
+            z-index: 10;
+        }
+    }
+    .cancel{
+        width: 90rpx;
+        text-align: center;
+        letter-spacing: 4rpx;
+    }
+}
+.hotContainer{
+    margin-top: 20rpx;
+}
+.title{
+    line-height: 90rpx;
+   
+}
+.hotList{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 32rpx;
+    
+    .hotItem{
+        width: 50%;
+        line-height: 80rpx;
+        display: flex;
+        align-items: center;
+        .order{
+            margin-right: 10rpx;
+        }
+        .searchWord{
+            
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .searchWord1{
+            max-width: 50%;
+        }
+        .searchWord2{
+            max-width: 90%;
+        }
+        .iconImg{
+           height: 30rpx;
+            margin-left: 10rpx;
+            
+        }
+    }
+}
+.searchList{
+    position: absolute;
+    z-index: 10;
+    background-color: #fff;
+    width: 100%;
+    
+    height: calc(100vh - 90rpx);
+    top: 90rpx;
+    .notFound{
+        font-size: 30rpx;
+        margin: 50rpx auto;
+        text-align: center;
+    }
+}
+.searchItem{
+    position: relative;
+    display: flex;
+    height: 90rpx;
+    width: 100%;
+    
+    line-height: 90rpx;
+    font-size: 34rpx;
+    
+    
+    .searchIcon{
+      width: 80rpx;
+      text-align: center;
+      
+        font-size: 34rpx;
+    }
+    .searchName{
+        flex: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border-bottom: 1rpx solid rgb(211, 206, 206);
+    }
+}

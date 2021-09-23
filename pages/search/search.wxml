@@ -1,0 +1,47 @@
+<!--pages/search/search.wxml-->
+<view class="searchContainer">
+    <!-- 头部区域 -->
+    <view class="header">
+        <view class="searchInput">
+            <text class="iconfont icon-search1 searchIcon"></text>
+            <input type="text" placeholder="{{placeholderContent}}" 
+            placeholder-class="inputPlaceholder"
+            value="{{searchContent}}"
+            bindinput="handleSearch" />
+            <image class="clearImg" src="/static/images/cancel.png"
+            hidden="{{!searchContent}}"
+            catchtap="clearInput"></image>
+        </view>
+        <text class="cancel">取消</text>
+    </view>
+   
+    <!-- 热搜 -->
+    <view class="hotContainer">
+        <view class="title">热搜榜</view>
+        <view class="hotList">
+            <view class="hotItem" 
+            wx:for="{{hotList}}" wx:key="searchWord">
+                <text class="order">{{index+1}}</text>
+                <text class="searchWord {{item.iconUrl?'searchWord1':'searchWord2'}}">{{item.searchWord}}</text>
+                <image  wx:if="{{item.iconUrl}}" class="iconImg" src="{{item.iconUrl}}"
+                mode="heightFix"></image>
+            </view>
+            
+        </view>
+    </view>
+</view>
+ <view class="searchList" hidden="{{!searchContent}}">
+        <block wx:if="{{!isFound}}">
+            <view class="notFound">未找到与“”相关的内容</view>
+        </block>
+        <block wx:else>
+            <view class="searchItem" wx:for="{{searchList}}"
+            data-keyword="{{item.keyword}}"
+        wx:key="feature" bindtap="goSingleSong" >
+            <text class="iconfont icon-search1 searchIcon"></text>
+            <text class="searchName"> {{item.keyword}} </text>
+        </view>
+        </block>
+        
+       
+</view>

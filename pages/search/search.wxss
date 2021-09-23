@@ -1,0 +1,105 @@
+.searchContainer {
+  padding: 0 20rpx;
+}
+.header {
+  height: 80rpx;
+  display: flex;
+  font-size: 38rpx;
+  line-height: 80rpx;
+}
+.header .searchInput {
+  flex: 1;
+  position: relative;
+}
+.header .searchInput .searchIcon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.header .searchInput input {
+  margin: 0 40rpx 0 60rpx;
+  height: 80rpx;
+  border-bottom: 1rpx solid #333;
+}
+.header .searchInput .clearImg {
+  position: absolute;
+  right: 30rpx;
+  top: 15rpx;
+  width: 50rpx;
+  height: 50rpx;
+  z-index: 10;
+}
+.header .cancel {
+  width: 90rpx;
+  text-align: center;
+  letter-spacing: 4rpx;
+}
+.hotContainer {
+  margin-top: 20rpx;
+}
+.title {
+  line-height: 90rpx;
+}
+.hotList {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 32rpx;
+}
+.hotList .hotItem {
+  width: 50%;
+  line-height: 80rpx;
+  display: flex;
+  align-items: center;
+}
+.hotList .hotItem .order {
+  margin-right: 10rpx;
+}
+.hotList .hotItem .searchWord {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.hotList .hotItem .searchWord1 {
+  max-width: 50%;
+}
+.hotList .hotItem .searchWord2 {
+  max-width: 90%;
+}
+.hotList .hotItem .iconImg {
+  height: 30rpx;
+  margin-left: 10rpx;
+}
+.searchList {
+  position: absolute;
+  z-index: 10;
+  background-color: #fff;
+  width: 100%;
+  height: calc(100vh - 90rpx);
+  top: 90rpx;
+}
+.searchList .notFound {
+  font-size: 30rpx;
+  margin: 50rpx auto;
+  text-align: center;
+}
+.searchItem {
+  position: relative;
+  display: flex;
+  height: 90rpx;
+  width: 100%;
+  line-height: 90rpx;
+  font-size: 34rpx;
+}
+.searchItem .searchIcon {
+  width: 80rpx;
+  text-align: center;
+  font-size: 34rpx;
+}
+.searchItem .searchName {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-bottom: 1rpx solid #d3cece;
+}

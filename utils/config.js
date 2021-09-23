@@ -1,6 +1,6 @@
 export default {
-    host:'http://localhost:3000'
-    //host:'http://jettie.free.idcfengye.com:4443'
+    //host:'http://localhost:3000'
+     host:'https://autumnfish.cn/'
 }
 
 // var books=[
