@@ -1,0 +1,121 @@
+.header {
+  display: flex;
+  padding: 10rpx;
+}
+.header image {
+  width: 60rpx;
+  height: 60rpx;
+}
+.header .search {
+  flex: 1;
+  text-align: center;
+  border: 1px solid #eee;
+  color: #d43c33;
+  line-height: 60rpx;
+  font-size: 26rpx;
+  margin: 0 20rpx;
+  border-radius: 10rpx;
+}
+.videoList {
+  display: flex;
+  height: 60rpx;
+  white-space: nowrap;
+  width: 90%;
+}
+.videoList .videoListItem {
+  height: 60rpx;
+  padding: 0 30rpx;
+  font-size: 30rpx;
+  line-height: 60rpx;
+}
+.videoList .videoListContent {
+  height: 60rpx;
+  box-sizing: border-box;
+  color: #666;
+}
+.videoList .videoActive {
+  background: #eee7e6;
+  color: #d43c33;
+  border-radius: 30rpx;
+  padding: 0 35rpx;
+}
+.scrollNav {
+  position: relative;
+}
+.scrollNav .sanheng {
+  position: absolute;
+  right: 15rpx;
+  top: 0;
+  background-color: #fff;
+  font-weight: bold;
+  height: 60rpx;
+}
+.videoScroll {
+  margin-top: 15rpx;
+  height: calc(100vh - 155rpx);
+}
+.videoScroll .videoItem {
+  width: 94%;
+  margin: 0 auto 20rpx;
+  position: relative;
+}
+.videoScroll .videoItem .common {
+  width: 100%;
+  height: 400rpx;
+  border-radius: 20rpx;
+}
+.videoScroll .videoItem .mask {
+  position: absolute;
+  width: 100%;
+  height: 320rpx;
+  left: 0;
+  top: 0;
+  border-radius: 20rpx;
+}
+.videoScroll .videoItem .content {
+  font-size: 26rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  max-width: 500rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.videoScroll .videoItem .footer {
+  border-top: 1px solid #eee;
+  padding: 20rpx 0;
+  display: flex;
+  justify-content: space-between;
+}
+.videoScroll .videoItem .footer .avatar-nickname {
+  display: flex;
+  align-items: center;
+}
+.videoScroll .videoItem .footer .avatar-nickname .avatar {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  margin-right: 10rpx;
+}
+.videoScroll .videoItem .footer .avatar-nickname .nickname {
+  font-size: 30rpx;
+}
+.videoScroll .videoItem .footer .praised-comment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200rpx;
+}
+.videoScroll .videoItem .footer .praised-comment .item {
+  position: relative;
+}
+.videoScroll .videoItem .footer .praised-comment .item .count {
+  position: absolute;
+  font-size: 20rpx;
+  right: -40rpx;
+  top: -20rpx;
+}
+.videoScroll .videoItem .footer .praised-comment .btn {
+  height: 60rpx;
+  line-height: 60rpx;
+}

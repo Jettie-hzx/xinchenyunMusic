@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+       <!-- <input type="checkbox" value="a" v-model="collect">
+       <input type="checkbox" value="b" v-model="collect">
+       <input type="checkbox" value="c" v-model="collect">
+       <input type="checkbox" value="d" v-model="collect">
+       <div>{{collect}}</div> -->
+       <input type="radio" value="男" v-model="sex">
+       <input type="radio" value="女" v-model="sex">
+       <div>{{sex}}</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script>
+        // new Vue({
+        //     el:"#app",
+        //     data:{
+        //         // bookInfo:[
+        //         //     {name:'算法导论',time:'2006-9',price:85.00},
+        //         //     {name:'编程艺术',time:'2006-2',price:59.00},
+        //         //     {name:'编程珠玑',time:'2008-10',price:39.00},
+        //         //     {name:'代码大全',time:'2006-3',price:128.00}
+        //         // ]
+        //         sex:"男"
+        //     }
+        // })
+        // function fi(n,a=1,b=1){
+        //     if(n<=1) return b
+        //     return fi(n-1,b,a+b)
+        // }
+        // console.log(fi(700));
+        let arr=[1,2,3,4,5]
+        //arr.splice(2,2,7)
+        arr=arr.slice(3,2,7)
+        console.log(arr);
+    </script>
+</body>
+</html>

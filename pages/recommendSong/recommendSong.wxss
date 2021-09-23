@@ -1,0 +1,69 @@
+.recommendSongContainer .header {
+  position: relative;
+  width: 100%;
+  height: 300rpx;
+}
+.recommendSongContainer .header image {
+  width: 100%;
+  height: 100%;
+}
+.recommendSongContainer .header .date {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  color: aliceblue;
+  font-weight: 600;
+}
+.header .date .month {
+  font-size: 40rpx;
+}
+.listContainer {
+  position: relative;
+  top: -20rpx;
+  padding: 0 20rpx;
+  border-radius: 30rpx;
+  background-color: #fff;
+}
+.listHeader {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.scrollItem {
+  display: flex;
+  height: 80rpx;
+  margin: 40rpx 0;
+}
+.scrollItem image {
+  width: 80rpx;
+  height: 80rpx;
+}
+.scrollItem .musicInfo {
+  display: flex;
+  width: 510rpx;
+  padding: 0 30rpx;
+  flex-direction: column;
+  font-size: 24rpx;
+}
+.scrollItem .musicInfo .infoItem {
+  height: 40rpx;
+  line-height: 40rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.scrollItem .iconfont {
+  width: 60rpx;
+  text-align: right;
+  line-height: 80rpx;
+}

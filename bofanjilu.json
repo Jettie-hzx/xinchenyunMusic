@@ -1,0 +1,2436 @@
+{
+    "weekData": [
+        {
+            "playCount": 1,
+            "score": 100,
+            "song": {
+                "name": "さくら 〜あなたに出会えてよかった〜",
+                "id": 805197,
+                "pst": 0,
+                "t": 0,
+                "ar": [
+                    {
+                        "id": 21140,
+                        "name": "RSP",
+                        "tns": [],
+                        "alias": []
+                    }
+                ],
+                "alia": [],
+                "pop": 100,
+                "st": 0,
+                "rt": "",
+                "fee": 8,
+                "v": 118,
+                "crbt": null,
+                "cf": "",
+                "al": {
+                    "id": 79921,
+                    "name": "さくら 〜あなたに出会えてよかった〜",
+                    "picUrl": "http://p3.music.126.net/cm1lmd7719Ll_KZ5CVL3ZA==/109951166200090176.jpg",
+                    "tns": [],
+                    "pic_str": "109951166200090176",
+                    "pic": 109951166200090180
+                },
+                "dt": 301493,
+                "h": {
+                    "br": 320000,
+                    "fid": 0,
+                    "size": 12062345,
+                    "vd": -50563
+                },
+                "m": {
+                    "br": 192000,
+                    "fid": 0,
+                    "size": 7237424,
+                    "vd": -50563
+                },
+                "l": {
+                    "br": 128000,
+                    "fid": 0,
+                    "size": 4824963,
+                    "vd": -50563
+                },
+                "a": null,
+                "cd": "1",
+                "no": 1,
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": [],
+                "djId": 0,
+                "copyright": 0,
+                "s_id": 0,
+                "mark": 9007199255011328,
+                "originCoverType": 1,
+                "originSongSimpleData": null,
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "rtype": 0,
+                "rurl": null,
+                "mst": 9,
+                "cp": 2706476,
+                "mv": 425798,
+                "publishTime": 1235491200000,
+                "privilege": {
+                    "id": 805197,
+                    "fee": 8,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 128000,
+                    "dl": 0,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 999000,
+                    "fl": 128000,
+                    "toast": false,
+                    "flag": 4,
+                    "preSell": false
+                }
+            }
+        },
+        {
+            "playCount": 1,
+            "score": 100,
+            "song": {
+                "name": "あの日タイムマシン",
+                "id": 769870,
+                "pst": 0,
+                "t": 0,
+                "ar": [
+                    {
+                        "id": 20293,
+                        "name": "LONG SHOT PARTY",
+                        "tns": [],
+                        "alias": []
+                    }
+                ],
+                "alia": [
+                    "TV动画《续 夏目友人帐》片头曲:TVアニメ「続 夏目友人帳」OP"
+                ],
+                "pop": 95,
+                "st": 0,
+                "rt": "",
+                "fee": 8,
+                "v": 32,
+                "crbt": null,
+                "cf": "",
+                "al": {
+                    "id": 75731,
+                    "name": "あの日タイムマシン",
+                    "picUrl": "http://p3.music.126.net/nTYeEpXK0Hdqo05xDIyBSg==/109951166200125745.jpg",
+                    "tns": [],
+                    "pic_str": "109951166200125745",
+                    "pic": 109951166200125740
+                },
+                "dt": 238445,
+                "h": {
+                    "br": 320000,
+                    "fid": 0,
+                    "size": 9537872,
+                    "vd": -82211
+                },
+                "m": {
+                    "br": 192000,
+                    "fid": 0,
+                    "size": 5722741,
+                    "vd": -79716
+                },
+                "l": {
+                    "br": 128000,
+                    "fid": 0,
+                    "size": 3815175,
+                    "vd": -78095
+                },
+                "a": null,
+                "cd": "1",
+                "no": 1,
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": [],
+                "djId": 0,
+                "copyright": 1,
+                "s_id": 0,
+                "mark": 9007199255011328,
+                "originCoverType": 0,
+                "originSongSimpleData": null,
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "rtype": 0,
+                "rurl": null,
+                "mst": 9,
+                "cp": 2706476,
+                "mv": 505197,
+                "publishTime": 1233072000000,
+                "tns": [
+                    "夏目友人帐"
+                ],
+                "privilege": {
+                    "id": 769870,
+                    "fee": 8,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 128000,
+                    "dl": 0,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 320000,
+                    "fl": 128000,
+                    "toast": false,
+                    "flag": 4,
+                    "preSell": false
+                }
+            }
+        },
+        {
+            "playCount": 1,
+            "score": 100,
+            "song": {
+                "name": "Ref:rain",
+                "id": 536623501,
+                "pst": 0,
+                "t": 0,
+                "ar": [
+                    {
+                        "id": 16152,
+                        "name": "Aimer",
+                        "tns": [],
+                        "alias": []
+                    }
+                ],
+                "alia": [
+                    "TV动画《恋如雨止》片尾曲",
+                    " TVアニメ「恋は雨上がりのように」EDテーマ"
+                ],
+                "pop": 100,
+                "st": 0,
+                "rt": null,
+                "fee": 8,
+                "v": 90,
+                "crbt": null,
+                "cf": "",
+                "al": {
+                    "id": 37256090,
+                    "name": "Ref:rain / 眩いばかり",
+                    "picUrl": "http://p3.music.126.net/7kWIdyzLxpz5z-clB-iyYA==/109951165049859434.jpg",
+                    "tns": [],
+                    "pic_str": "109951165049859434",
+                    "pic": 109951165049859440
+                },
+                "dt": 290194,
+                "h": {
+                    "br": 320000,
+                    "fid": 0,
+                    "size": 11608860,
+                    "vd": -73510
+                },
+                "m": {
+                    "br": 192000,
+                    "fid": 0,
+                    "size": 6965333,
+                    "vd": -71075
+                },
+                "l": {
+                    "br": 128000,
+                    "fid": 0,
+                    "size": 4643570,
+                    "vd": -69598
+                },
+                "a": null,
+                "cd": "1",
+                "no": 1,
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": [],
+                "djId": 0,
+                "copyright": 1,
+                "s_id": 0,
+                "mark": 270336,
+                "originCoverType": 1,
+                "originSongSimpleData": null,
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "rtype": 0,
+                "rurl": null,
+                "mst": 9,
+                "cp": 2706476,
+                "mv": 5838157,
+                "publishTime": 1519142400000,
+                "privilege": {
+                    "id": 536623501,
+                    "fee": 8,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 128000,
+                    "dl": 0,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 320000,
+                    "fl": 128000,
+                    "toast": false,
+                    "flag": 4,
+                    "preSell": false
+                }
+            }
+        },
+        {
+            "playCount": 1,
+            "score": 100,
+            "song": {
+                "name": "Lemon",
+                "id": 536622304,
+                "pst": 0,
+                "t": 0,
+                "ar": [
+                    {
+                        "id": 159300,
+                        "name": "米津玄師",
+                        "tns": [],
+                        "alias": []
+                    }
+                ],
+                "alia": [
+                    "电视剧《非自然死亡》主题曲:ドラマ「アンナチュラル」主題歌",
+                    "《Unnatural》日剧主题曲"
+                ],
+                "pop": 100,
+                "st": 0,
+                "rt": null,
+                "fee": 8,
+                "v": 143,
+                "crbt": null,
+                "cf": "",
+                "al": {
+                    "id": 37575103,
+                    "name": "Lemon",
+                    "picUrl": "http://p3.music.126.net/GwgxnfMH1BlDNPobXPJZQg==/109951166222112007.jpg",
+                    "tns": [],
+                    "pic_str": "109951166222112007",
+                    "pic": 109951166222112000
+                },
+                "dt": 256000,
+                "h": null,
+                "m": {
+                    "br": 192001,
+                    "fid": 0,
+                    "size": 6145297,
+                    "vd": -62508
+                },
+                "l": {
+                    "br": 128001,
+                    "fid": 0,
+                    "size": 4096879,
+                    "vd": -60888
+                },
+                "a": null,
+                "cd": "1",
+                "no": 1,
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": [],
+                "djId": 0,
+                "copyright": 1,
+                "s_id": 0,
+                "mark": 270336,
+                "originCoverType": 1,
+                "originSongSimpleData": null,
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "rtype": 0,
+                "rurl": null,
+                "mst": 9,
+                "cp": 2706476,
+                "mv": 5841179,
+                "publishTime": 1520956800000,
+                "privilege": {
+                    "id": 536622304,
+                    "fee": 8,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 128000,
+                    "dl": 0,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 999000,
+                    "fl": 128000,
+                    "toast": false,
+                    "flag": 4,
+                    "preSell": false
+                }
+            }
+        },
+        {
+            "playCount": 1,
+            "score": 100,
+            "song": {
+                "name": "LOSER",
+                "id": 512359195,
+                "pst": 0,
+                "t": 0,
+                "ar": [
+                    {
+                        "id": 159300,
+                        "name": "米津玄師",
+                        "tns": [],
+                        "alias": []
+                    }
+                ],
+                "alia": [],
+                "pop": 100,
+                "st": 0,
+                "rt": null,
+                "fee": 8,
+                "v": 621,
+                "crbt": null,
+                "cf": "",
+                "al": {
+                    "id": 36529043,
+                    "name": "BOOTLEG",
+                    "picUrl": "http://p3.music.126.net/-yroMTqARCDkmdPqEDc6tQ==/109951166214343383.jpg",
+                    "tns": [],
+                    "pic_str": "109951166214343383",
+                    "pic": 109951166214343380
+                },
+                "dt": 243853,
+                "h": {
+                    "br": 320000,
+                    "fid": 0,
+                    "size": 9755211,
+                    "vd": -70221
+                },
+                "m": {
+                    "br": 192000,
+                    "fid": 0,
+                    "size": 5853144,
+                    "vd": -67888
+                },
+                "l": {
+                    "br": 128000,
+                    "fid": 0,
+                    "size": 3902111,
+                    "vd": -66789
+                },
+                "a": null,
+                "cd": "1",
+                "no": 2,
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": [],
+                "djId": 0,
+                "copyright": 1,
+                "s_id": 0,
+                "mark": 270336,
+                "originCoverType": 1,
+                "originSongSimpleData": null,
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "rtype": 0,
+                "rurl": null,
+                "mst": 9,
+                "cp": 2706476,
+                "mv": 5359554,
+                "publishTime": 1509465600000,
+                "privilege": {
+                    "id": 512359195,
+                    "fee": 8,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 128000,
+                    "dl": 0,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 320000,
+                    "fl": 128000,
+                    "toast": false,
+                    "flag": 4,
+                    "preSell": false
+                }
+            }
+        },
+        {
+            "playCount": 1,
+            "score": 100,
+            "song": {
+                "name": "打上花火",
+                "id": 496869422,
+                "pst": 0,
+                "t": 0,
+                "ar": [
+                    {
+                        "id": 855508,
+                        "name": "DAOKO",
+                        "tns": [],
+                        "alias": []
+                    },
+                    {
+                        "id": 159300,
+                        "name": "米津玄師",
+                        "tns": [],
+                        "alias": []
+                    }
+                ],
+                "alia": [
+                    "动画电影《升空的焰火，从下面看还是从侧面看?》主题曲"
+                ],
+                "pop": 100,
+                "st": 0,
+                "rt": null,
+                "fee": 0,
+                "v": 134,
+                "crbt": null,
+                "cf": "",
+                "al": {
+                    "id": 35864443,
+                    "name": "打上花火",
+                    "picUrl": "http://p3.music.126.net/ZUCE_1Tl_hkbtamKmSNXEg==/109951163009282836.jpg",
+                    "tns": [],
+                    "pic_str": "109951163009282836",
+                    "pic": 109951163009282830
+                },
+                "dt": 289334,
+                "h": {
+                    "br": 320000,
+                    "fid": 0,
+                    "size": 11576468,
+                    "vd": -37000
+                },
+                "m": {
+                    "br": 192000,
+                    "fid": 0,
+                    "size": 6945898,
+                    "vd": -34200
+                },
+                "l": {
+                    "br": 128000,
+                    "fid": 0,
+                    "size": 4630613,
+                    "vd": -32900
+                },
+                "a": null,
+                "cd": "1",
+                "no": 1,
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": [],
+                "djId": 0,
+                "copyright": 2,
+                "s_id": 0,
+                "mark": 262144,
+                "originCoverType": 1,
+                "originSongSimpleData": null,
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "rtype": 0,
+                "rurl": null,
+                "mst": 9,
+                "cp": 663018,
+                "mv": 5622072,
+                "publishTime": 1502812800007,
+                "privilege": {
+                    "id": 496869422,
+                    "fee": 0,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 320000,
+                    "dl": 999000,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 999000,
+                    "fl": 320000,
+                    "toast": false,
+                    "flag": 256,
+                    "preSell": false
+                }
+            }
+        },
+        {
+            "playCount": 1,
+            "score": 100,
+            "song": {
+                "name": "願い~あの頃のキミへ~",
+                "id": 488388942,
+                "pst": 0,
+                "t": 0,
+                "ar": [
+                    {
+                        "id": 954456,
+                        "name": "當山みれい",
+                        "tns": [],
+                        "alias": []
+                    }
+                ],
+                "alia": [],
+                "pop": 100,
+                "st": 0,
+                "rt": null,
+                "fee": 8,
+                "v": 32,
+                "crbt": null,
+                "cf": "",
+                "al": {
+                    "id": 35670809,
+                    "name": "Negai - EP",
+                    "picUrl": "http://p4.music.126.net/TBJ9yAhUs8UKWGFWuIJgxw==/109951165946337053.jpg",
+                    "tns": [],
+                    "pic_str": "109951165946337053",
+                    "pic": 109951165946337060
+                },
+                "dt": 340480,
+                "h": {
+                    "br": 320000,
+                    "fid": 0,
+                    "size": 13619244,
+                    "vd": -54328
+                },
+                "m": {
+                    "br": 192000,
+                    "fid": 0,
+                    "size": 8171564,
+                    "vd": -51839
+                },
+                "l": {
+                    "br": 128000,
+                    "fid": 0,
+                    "size": 5447724,
+                    "vd": -50250
+                },
+                "a": null,
+                "cd": "1",
+                "no": 1,
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": [],
+                "djId": 0,
+                "copyright": 1,
+                "s_id": 0,
+                "mark": 270336,
+                "originCoverType": 1,
+                "originSongSimpleData": null,
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "rtype": 0,
+                "rurl": null,
+                "mst": 9,
+                "cp": 2706476,
+                "mv": 5579193,
+                "publishTime": 1500998400000,
+                "tns": [
+                    "Negai Anokorono Kimie"
+                ],
+                "privilege": {
+                    "id": 488388942,
+                    "fee": 8,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 128000,
+                    "dl": 0,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 320000,
+                    "fl": 128000,
+                    "toast": false,
+                    "flag": 4,
+                    "preSell": false
+                }
+            }
+        },
+        {
+            "playCount": 1,
+            "score": 100,
+            "song": {
+                "name": "月光",
+                "id": 4873065,
+                "pst": 0,
+                "t": 0,
+                "ar": [
+                    {
+                        "id": 3066,
+                        "name": "胡彦斌",
+                        "tns": [],
+                        "alias": []
+                    }
+                ],
+                "alia": [
+                    "动画《秦时明月》主题曲"
+                ],
+                "pop": 100,
+                "st": 0,
+                "rt": "",
+                "fee": 1,
+                "v": 1083,
+                "crbt": null,
+                "cf": "",
+                "al": {
+                    "id": 489792,
+                    "name": "秦时明月 原声大碟",
+                    "picUrl": "http://p4.music.126.net/dAzMzFp6ucMVcSSPn0cFqg==/19049038951250054.jpg",
+                    "tns": [],
+                    "pic_str": "19049038951250054",
+                    "pic": 19049038951250056
+                },
+                "dt": 279000,
+                "h": {
+                    "br": 320000,
+                    "fid": 0,
+                    "size": 11171099,
+                    "vd": -18200
+                },
+                "m": {
+                    "br": 192000,
+                    "fid": 0,
+                    "size": 6702697,
+                    "vd": -16100
+                },
+                "l": {
+                    "br": 128000,
+                    "fid": 0,
+                    "size": 4468496,
+                    "vd": -15000
+                },
+                "a": null,
+                "cd": "1",
+                "no": 1,
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": [],
+                "djId": 0,
+                "copyright": 2,
+                "s_id": 0,
+                "mark": 8192,
+                "originCoverType": 1,
+                "originSongSimpleData": null,
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "rtype": 0,
+                "rurl": null,
+                "mst": 9,
+                "cp": 13009,
+                "mv": 5570293,
+                "publishTime": 1224604800000,
+                "privilege": {
+                    "id": 4873065,
+                    "fee": 1,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 0,
+                    "dl": 0,
+                    "sp": 0,
+                    "cp": 0,
+                    "subp": 0,
+                    "cs": false,
+                    "maxbr": 320000,
+                    "fl": 0,
+                    "toast": false,
+                    "flag": 260,
+                    "preSell": false
+                }
+            }
+        },
+        {
+            "playCount": 1,
+            "score": 100,
+            "song": {
+                "name": "gravityWall",
+                "id": 482999012,
+                "pst": 0,
+                "t": 0,
+                "ar": [
+                    {
+                        "id": 12629228,
+                        "name": "Tielle",
+                        "tns": [],
+                        "alias": []
+                    },
+                    {
+                        "id": 12531080,
+                        "name": "R!N/Gemie",
+                        "tns": [],
+                        "alias": []
+                    },
+                    {
+                        "id": 1096011,
+                        "name": "SawanoHiroyuki[nZk]",
+                        "tns": [],
+                        "alias": []
+                    }
+                ],
+                "alia": [
+                    "TV动画《Re:CREATORS》OP1"
+                ],
+                "pop": 100,
+                "st": 0,
+                "rt": null,
+                "fee": 8,
+                "v": 161,
+                "crbt": null,
+                "cf": "",
+                "al": {
+                    "id": 35377381,
+                    "name": "gravityWall/sh0ut",
+                    "picUrl": "http://p4.music.126.net/yOJLzc_5BYWjYIiRn7BhcQ==/109951166200231837.jpg",
+                    "tns": [],
+                    "pic_str": "109951166200231837",
+                    "pic": 109951166200231840
+                },
+                "dt": 226377,
+                "h": {
+                    "br": 320000,
+                    "fid": 0,
+                    "size": 9055129,
+                    "vd": -74812
+                },
+                "m": {
+                    "br": 192000,
+                    "fid": 0,
+                    "size": 5433095,
+                    "vd": -72455
+                },
+                "l": {
+                    "br": 128000,
+                    "fid": 0,
+                    "size": 3622078,
+                    "vd": -71052
+                },
+                "a": null,
+                "cd": "1",
+                "no": 1,
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": [],
+                "djId": 0,
+                "copyright": 1,
+                "s_id": 0,
+                "mark": 270336,
+                "originCoverType": 0,
+                "originSongSimpleData": null,
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "rtype": 0,
+                "rurl": null,
+                "mst": 9,
+                "cp": 2706476,
+                "mv": 0,
+                "publishTime": 1498579200000,
+                "privilege": {
+                    "id": 482999012,
+                    "fee": 8,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 128000,
+                    "dl": 0,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 320000,
+                    "fl": 128000,
+                    "toast": false,
+                    "flag": 4,
+                    "preSell": false
+                }
+            }
+        },
+        {
+            "playCount": 1,
+            "score": 100,
+            "song": {
+                "name": "フローリア",
+                "id": 477458156,
+                "pst": 0,
+                "t": 0,
+                "ar": [
+                    {
+                        "id": 15675,
+                        "name": "佐香智久",
+                        "tns": [],
+                        "alias": []
+                    }
+                ],
+                "alia": [
+                    "TV动画《夏目友人帐第六季》OP"
+                ],
+                "pop": 95,
+                "st": 0,
+                "rt": null,
+                "fee": 8,
+                "v": 102,
+                "crbt": null,
+                "cf": "",
+                "al": {
+                    "id": 35445851,
+                    "name": "フローリア",
+                    "picUrl": "http://p3.music.126.net/GyEdxuOck-TAavfprJIrww==/109951165049921608.jpg",
+                    "tns": [],
+                    "pic_str": "109951165049921608",
+                    "pic": 109951165049921600
+                },
+                "dt": 268673,
+                "h": {
+                    "br": 320000,
+                    "fid": 0,
+                    "size": 10749954,
+                    "vd": -14800
+                },
+                "m": {
+                    "br": 192000,
+                    "fid": 0,
+                    "size": 6449990,
+                    "vd": -12300
+                },
+                "l": {
+                    "br": 128000,
+                    "fid": 0,
+                    "size": 4300008,
+                    "vd": -10800
+                },
+                "a": null,
+                "cd": "1",
+                "no": 1,
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": [],
+                "djId": 0,
+                "copyright": 0,
+                "s_id": 0,
+                "mark": 270336,
+                "originCoverType": 1,
+                "originSongSimpleData": null,
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "rtype": 0,
+                "rurl": null,
+                "mst": 9,
+                "cp": 2706476,
+                "mv": 5469965,
+                "publishTime": 1494374400000,
+                "privilege": {
+                    "id": 477458156,
+                    "fee": 8,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 128000,
+                    "dl": 0,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 999000,
+                    "fl": 128000,
+                    "toast": false,
+                    "flag": 4,
+                    "preSell": false
+                }
+            }
+        },
+        {
+            "playCount": 1,
+            "score": 100,
+            "song": {
+                "name": "Catch the Moment",
+                "id": 459925470,
+                "pst": 0,
+                "t": 0,
+                "ar": [
+                    {
+                        "id": 16995,
+                        "name": "LiSA",
+                        "tns": [],
+                        "alias": []
+                    }
+                ],
+                "alia": [
+                    "剧场版《刀剑神域：序列之争》主题曲 / 劇場版「ソードアート・オンライン-オーディナル・スケール-」主題歌"
+                ],
+                "pop": 95,
+                "st": 0,
+                "rt": null,
+                "fee": 8,
+                "v": 21,
+                "crbt": null,
+                "cf": "",
+                "al": {
+                    "id": 35174599,
+                    "name": "Catch the Moment (期間生産限定盤)",
+                    "picUrl": "http://p3.music.126.net/7FeXaaHVWVrj6SS0ohbepQ==/18776360069324904.jpg",
+                    "tns": [],
+                    "pic_str": "18776360069324904",
+                    "pic": 18776360069324904
+                },
+                "dt": 282840,
+                "h": {
+                    "br": 320000,
+                    "fid": 0,
+                    "size": 11314199,
+                    "vd": -50000
+                },
+                "m": {
+                    "br": 192000,
+                    "fid": 0,
+                    "size": 6788537,
+                    "vd": -47500
+                },
+                "l": {
+                    "br": 128000,
+                    "fid": 0,
+                    "size": 4525706,
+                    "vd": -45900
+                },
+                "a": null,
+                "cd": "1",
+                "no": 1,
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": [],
+                "djId": 0,
+                "copyright": 0,
+                "s_id": 0,
+                "mark": 270336,
+                "originCoverType": 1,
+                "originSongSimpleData": null,
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "rtype": 0,
+                "rurl": null,
+                "mst": 9,
+                "cp": 1415965,
+                "mv": 0,
+                "publishTime": 1487088000007,
+                "privilege": {
+                    "id": 459925470,
+                    "fee": 8,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 128000,
+                    "dl": 0,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 320000,
+                    "fl": 128000,
+                    "toast": false,
+                    "flag": 4,
+                    "preSell": false
+                }
+            }
+        },
+        {
+            "playCount": 1,
+            "score": 100,
+            "song": {
+                "name": "only my railgun",
+                "id": 448742120,
+                "pst": 0,
+                "t": 0,
+                "ar": [
+                    {
+                        "id": 17282,
+                        "name": "Machico",
+                        "tns": [],
+                        "alias": []
+                    }
+                ],
+                "alia": [
+                    "TV动画《某科学的超电磁炮》OP1"
+                ],
+                "pop": 100,
+                "st": 0,
+                "rt": null,
+                "fee": 0,
+                "v": 6,
+                "crbt": null,
+                "cf": "",
+                "al": {
+                    "id": 35082035,
+                    "name": "COLORS II -RML-",
+                    "picUrl": "http://p3.music.126.net/umN1L50UDb2V9g3mKm4wbw==/18578447976193381.jpg",
+                    "tns": [],
+                    "pic_str": "18578447976193381",
+                    "pic": 18578447976193380
+                },
+                "dt": 254932,
+                "h": {
+                    "br": 320000,
+                    "fid": 0,
+                    "size": 10199293,
+                    "vd": -53000
+                },
+                "m": {
+                    "br": 192000,
+                    "fid": 0,
+                    "size": 6119593,
+                    "vd": -50500
+                },
+                "l": {
+                    "br": 128000,
+                    "fid": 0,
+                    "size": 4079743,
+                    "vd": -48800
+                },
+                "a": null,
+                "cd": "1",
+                "no": 7,
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": [],
+                "djId": 0,
+                "copyright": 0,
+                "s_id": 0,
+                "mark": 262144,
+                "originCoverType": 0,
+                "originSongSimpleData": null,
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "rtype": 0,
+                "rurl": null,
+                "mst": 9,
+                "cp": 663018,
+                "mv": 0,
+                "publishTime": 1428422400007,
+                "privilege": {
+                    "id": 448742120,
+                    "fee": 0,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 320000,
+                    "dl": 320000,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 320000,
+                    "fl": 320000,
+                    "toast": false,
+                    "flag": 256,
+                    "preSell": false
+                }
+            }
+        },
+        {
+            "playCount": 1,
+            "score": 100,
+            "song": {
+                "name": "極楽浄土",
+                "id": 446875490,
+                "pst": 0,
+                "t": 0,
+                "ar": [
+                    {
+                        "id": 19605,
+                        "name": "GARNiDELiA",
+                        "tns": [],
+                        "alias": []
+                    }
+                ],
+                "alia": [
+                    "极乐净土",
+                    "《热血街舞团》第二期背景音乐"
+                ],
+                "pop": 100,
+                "st": 0,
+                "rt": null,
+                "fee": 8,
+                "v": 200,
+                "crbt": null,
+                "cf": "",
+                "al": {
+                    "id": 35052105,
+                    "name": "Violet Cry",
+                    "picUrl": "http://p3.music.126.net/dzrxDj6aZkSZLFUfNwO4rw==/109951165052796560.jpg",
+                    "tns": [],
+                    "pic_str": "109951165052796560",
+                    "pic": 109951165052796560
+                },
+                "dt": 218920,
+                "h": {
+                    "br": 320000,
+                    "fid": 0,
+                    "size": 8759423,
+                    "vd": -60592
+                },
+                "m": {
+                    "br": 192000,
+                    "fid": 0,
+                    "size": 5255671,
+                    "vd": -60592
+                },
+                "l": {
+                    "br": 128000,
+                    "fid": 0,
+                    "size": 3503795,
+                    "vd": -60592
+                },
+                "a": null,
+                "cd": "1",
+                "no": 8,
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": [],
+                "djId": 0,
+                "copyright": 2,
+                "s_id": 0,
+                "mark": 270336,
+                "originCoverType": 1,
+                "originSongSimpleData": null,
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "rtype": 0,
+                "rurl": null,
+                "mst": 9,
+                "cp": 2706476,
+                "mv": 5337635,
+                "publishTime": 1481673600000,
+                "privilege": {
+                    "id": 446875490,
+                    "fee": 8,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 128000,
+                    "dl": 0,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 999000,
+                    "fl": 128000,
+                    "toast": false,
+                    "flag": 4,
+                    "preSell": false
+                }
+            }
+        },
+        {
+            "playCount": 1,
+            "score": 100,
+            "song": {
+                "name": "一笑懸命",
+                "id": 399249,
+                "pst": 0,
+                "t": 0,
+                "ar": [
+                    {
+                        "id": 13775,
+                        "name": "遊助",
+                        "tns": [],
+                        "alias": []
+                    }
+                ],
+                "alia": [],
+                "pop": 100,
+                "st": 0,
+                "rt": "",
+                "fee": 8,
+                "v": 45,
+                "crbt": null,
+                "cf": "",
+                "al": {
+                    "id": 39504,
+                    "name": "一笑懸命 / イナヅマ侍",
+                    "picUrl": "http://p3.music.126.net/uNdqB0uyuzH8uOPfNly4RQ==/109951166200293393.jpg",
+                    "tns": [],
+                    "pic_str": "109951166200293393",
+                    "pic": 109951166200293390
+                },
+                "dt": 232411,
+                "h": {
+                    "br": 320000,
+                    "fid": 0,
+                    "size": 9296501,
+                    "vd": -72566
+                },
+                "m": {
+                    "br": 192000,
+                    "fid": 0,
+                    "size": 5577918,
+                    "vd": -70134
+                },
+                "l": {
+                    "br": 128000,
+                    "fid": 0,
+                    "size": 3718626,
+                    "vd": -68759
+                },
+                "a": null,
+                "cd": "01",
+                "no": 1,
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": [],
+                "djId": 0,
+                "copyright": 1,
+                "s_id": 0,
+                "mark": 9007199255011328,
+                "originCoverType": 1,
+                "originSongSimpleData": null,
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "rtype": 0,
+                "rurl": null,
+                "mst": 9,
+                "cp": 2706476,
+                "mv": 0,
+                "publishTime": 1320768000000,
+                "privilege": {
+                    "id": 399249,
+                    "fee": 8,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 128000,
+                    "dl": 0,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 320000,
+                    "fl": 128000,
+                    "toast": false,
+                    "flag": 4,
+                    "preSell": false
+                }
+            }
+        },
+        {
+            "playCount": 1,
+            "score": 100,
+            "song": {
+                "name": "僕らの手には何もないけど、",
+                "id": 32317208,
+                "pst": 0,
+                "t": 0,
+                "ar": [
+                    {
+                        "id": 21162,
+                        "name": "RAM WIRE",
+                        "tns": [],
+                        "alias": []
+                    }
+                ],
+                "alia": [
+                    "电影《镜中的笑容》主题曲"
+                ],
+                "pop": 100,
+                "st": 0,
+                "rt": null,
+                "fee": 8,
+                "v": 99,
+                "crbt": null,
+                "cf": "",
+                "al": {
+                    "id": 3159048,
+                    "name": "僕らの手には何もないけど、",
+                    "picUrl": "http://p3.music.126.net/V54SwL143YQcTsV3isnk3g==/109951166202884757.jpg",
+                    "tns": [],
+                    "pic_str": "109951166202884757",
+                    "pic": 109951166202884750
+                },
+                "dt": 252630,
+                "h": {
+                    "br": 320000,
+                    "fid": 0,
+                    "size": 10105252,
+                    "vd": -79532
+                },
+                "m": {
+                    "br": 192000,
+                    "fid": 0,
+                    "size": 6063169,
+                    "vd": -77034
+                },
+                "l": {
+                    "br": 128000,
+                    "fid": 0,
+                    "size": 4042127,
+                    "vd": -75361
+                },
+                "a": null,
+                "cd": "01",
+                "no": 1,
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": [],
+                "djId": 0,
+                "copyright": 1,
+                "s_id": 0,
+                "mark": 270336,
+                "originCoverType": 1,
+                "originSongSimpleData": null,
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "rtype": 0,
+                "rurl": null,
+                "mst": 9,
+                "cp": 2706476,
+                "mv": 419444,
+                "publishTime": 1432656000000,
+                "tns": [
+                    "尽管我们手中空无一物"
+                ],
+                "privilege": {
+                    "id": 32317208,
+                    "fee": 8,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 128000,
+                    "dl": 0,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 320000,
+                    "fl": 128000,
+                    "toast": false,
+                    "flag": 4,
+                    "preSell": false
+                }
+            }
+        },
+        {
+            "playCount": 1,
+            "score": 100,
+            "song": {
+                "name": "BRE@TH//LESS",
+                "id": 29307195,
+                "pst": 0,
+                "t": 0,
+                "ar": [
+                    {
+                        "id": 16823,
+                        "name": "小林未郁",
+                        "tns": [],
+                        "alias": []
+                    }
+                ],
+                "alia": [
+                    "TV动画《ALDNOAH.ZERO》插曲"
+                ],
+                "pop": 100,
+                "st": 0,
+                "rt": null,
+                "fee": 8,
+                "v": 45,
+                "crbt": null,
+                "cf": "",
+                "al": {
+                    "id": 3003031,
+                    "name": "アルドノア・ゼロ オリジナル・サウンドトラック",
+                    "picUrl": "http://p3.music.126.net/dFHZ8zjTGY_6p-z1swc9lw==/109951166197961259.jpg",
+                    "tns": [],
+                    "pic_str": "109951166197961259",
+                    "pic": 109951166197961260
+                },
+                "dt": 242050,
+                "h": {
+                    "br": 320000,
+                    "fid": 0,
+                    "size": 9682068,
+                    "vd": -58925
+                },
+                "m": {
+                    "br": 192000,
+                    "fid": 0,
+                    "size": 5809258,
+                    "vd": -56416
+                },
+                "l": {
+                    "br": 128000,
+                    "fid": 0,
+                    "size": 3872853,
+                    "vd": -54729
+                },
+                "a": null,
+                "cd": "1",
+                "no": 20,
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": [],
+                "djId": 0,
+                "copyright": 1,
+                "s_id": 0,
+                "mark": 9007199255011328,
+                "originCoverType": 1,
+                "originSongSimpleData": null,
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "rtype": 0,
+                "rurl": null,
+                "mst": 9,
+                "cp": 2706476,
+                "mv": 0,
+                "publishTime": 1410278400000,
+                "privilege": {
+                    "id": 29307195,
+                    "fee": 8,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 128000,
+                    "dl": 0,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 320000,
+                    "fl": 128000,
+                    "toast": false,
+                    "flag": 4,
+                    "preSell": false
+                }
+            }
+        },
+        {
+            "playCount": 1,
+            "score": 100,
+            "song": {
+                "name": "aLIEz",
+                "id": 29307041,
+                "pst": 0,
+                "t": 0,
+                "ar": [
+                    {
+                        "id": 981205,
+                        "name": "mizuki (瑞葵)",
+                        "tns": [],
+                        "alias": []
+                    },
+                    {
+                        "id": 1096011,
+                        "name": "SawanoHiroyuki[nZk]",
+                        "tns": [],
+                        "alias": []
+                    }
+                ],
+                "alia": [
+                    "TV动画《ALDNOAH.ZERO》ED2",
+                    " TVアニメ「アルドノア・ゼロ」ED2"
+                ],
+                "pop": 100,
+                "st": 0,
+                "rt": null,
+                "fee": 8,
+                "v": 133,
+                "crbt": null,
+                "cf": "",
+                "al": {
+                    "id": 2982127,
+                    "name": "A/Z|aLIEz",
+                    "picUrl": "http://p3.music.126.net/1rQx6vMd3CYJy9ugjNUt9w==/109951165050792048.jpg",
+                    "tns": [],
+                    "pic_str": "109951165050792048",
+                    "pic": 109951165050792050
+                },
+                "dt": 268538,
+                "h": {
+                    "br": 320000,
+                    "fid": 0,
+                    "size": 10741595,
+                    "vd": -58984
+                },
+                "m": {
+                    "br": 192000,
+                    "fid": 0,
+                    "size": 6444974,
+                    "vd": -56511
+                },
+                "l": {
+                    "br": 128000,
+                    "fid": 0,
+                    "size": 4296664,
+                    "vd": -54895
+                },
+                "a": null,
+                "cd": "1",
+                "no": 3,
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": [],
+                "djId": 0,
+                "copyright": 1,
+                "s_id": 0,
+                "mark": 9007199255011328,
+                "originCoverType": 0,
+                "originSongSimpleData": null,
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "rtype": 0,
+                "rurl": null,
+                "mst": 9,
+                "cp": 2706476,
+                "mv": 382750,
+                "publishTime": 1410278400000,
+                "privilege": {
+                    "id": 29307041,
+                    "fee": 8,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 128000,
+                    "dl": 0,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 320000,
+                    "fl": 128000,
+                    "toast": false,
+                    "flag": 4,
+                    "preSell": false
+                }
+            }
+        },
+        {
+            "playCount": 1,
+            "score": 100,
+            "song": {
+                "name": "crossing field",
+                "id": 29027453,
+                "pst": 0,
+                "t": 0,
+                "ar": [
+                    {
+                        "id": 16995,
+                        "name": "LiSA",
+                        "tns": [],
+                        "alias": []
+                    }
+                ],
+                "alia": [
+                    "TV动画《刀剑神域》OP1:『アインクラッド編』 オープニングテーマ"
+                ],
+                "pop": 100,
+                "st": 0,
+                "rt": null,
+                "fee": 8,
+                "v": 579,
+                "crbt": null,
+                "cf": "",
+                "al": {
+                    "id": 2982162,
+                    "name": "ソードアート・オンライン ソングコレクション",
+                    "picUrl": "http://p3.music.126.net/YT-xEcLRSOvBtIXei6nQrg==/109951165487132240.jpg",
+                    "tns": [],
+                    "pic_str": "109951165487132240",
+                    "pic": 109951165487132240
+                },
+                "dt": 250946,
+                "h": {
+                    "br": 320000,
+                    "fid": 0,
+                    "size": 10040468,
+                    "vd": -42500
+                },
+                "m": {
+                    "br": 192000,
+                    "fid": 0,
+                    "size": 6024298,
+                    "vd": -40000
+                },
+                "l": {
+                    "br": 128000,
+                    "fid": 0,
+                    "size": 4016213,
+                    "vd": -38400
+                },
+                "a": null,
+                "cd": "1",
+                "no": 12,
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": [],
+                "djId": 0,
+                "copyright": 1,
+                "s_id": 0,
+                "mark": 9007199255003136,
+                "originCoverType": 1,
+                "originSongSimpleData": null,
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "rtype": 0,
+                "rurl": null,
+                "mst": 9,
+                "cp": 2706476,
+                "mv": 0,
+                "publishTime": 0,
+                "privilege": {
+                    "id": 29027453,
+                    "fee": 8,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 128000,
+                    "dl": 0,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 999000,
+                    "fl": 128000,
+                    "toast": false,
+                    "flag": 0,
+                    "preSell": false
+                }
+            }
+        },
+        {
+            "playCount": 1,
+            "score": 100,
+            "song": {
+                "name": "霞光",
+                "id": 285100,
+                "pst": 0,
+                "t": 0,
+                "ar": [
+                    {
+                        "id": 9179,
+                        "name": "曲锦楠",
+                        "tns": [],
+                        "alias": []
+                    }
+                ],
+                "alia": [
+                    "动画片《精灵世纪》片尾曲"
+                ],
+                "pop": 100,
+                "st": 0,
+                "rt": "",
+                "fee": 0,
+                "v": 16,
+                "crbt": null,
+                "cf": "",
+                "al": {
+                    "id": 28279,
+                    "name": "霞光",
+                    "picUrl": "http://p4.music.126.net/WZ7EK5_XdPP0bcVjwY3TPg==/49478023250943.jpg",
+                    "tns": [],
+                    "pic": 49478023250943
+                },
+                "dt": 158040,
+                "h": {
+                    "br": 320000,
+                    "fid": 0,
+                    "size": 6319548,
+                    "vd": -0.000265076
+                },
+                "m": {
+                    "br": 160000,
+                    "fid": 0,
+                    "size": 3160300,
+                    "vd": -0.000265076
+                },
+                "l": {
+                    "br": 96000,
+                    "fid": 0,
+                    "size": 1896600,
+                    "vd": -0.000265076
+                },
+                "a": null,
+                "cd": "1",
+                "no": 1,
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": [],
+                "djId": 0,
+                "copyright": 2,
+                "s_id": 0,
+                "mark": 0,
+                "originCoverType": 1,
+                "originSongSimpleData": null,
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "rtype": 0,
+                "rurl": null,
+                "mst": 9,
+                "cp": 0,
+                "mv": 5441518,
+                "publishTime": 1154016000000,
+                "privilege": {
+                    "id": 285100,
+                    "fee": 0,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 320000,
+                    "dl": 320000,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 320000,
+                    "fl": 320000,
+                    "toast": false,
+                    "flag": 128,
+                    "preSell": false
+                }
+            }
+        },
+        {
+            "playCount": 1,
+            "score": 100,
+            "song": {
+                "name": "锦鲤抄",
+                "id": 28188434,
+                "pst": 0,
+                "t": 0,
+                "ar": [
+                    {
+                        "id": 188565,
+                        "name": "银临",
+                        "tns": [],
+                        "alias": []
+                    },
+                    {
+                        "id": 981005,
+                        "name": "云の泣",
+                        "tns": [],
+                        "alias": []
+                    }
+                ],
+                "alia": [],
+                "pop": 100,
+                "st": 0,
+                "rt": "",
+                "fee": 8,
+                "v": 23,
+                "crbt": null,
+                "cf": "",
+                "al": {
+                    "id": 2742059,
+                    "name": "腐草为萤",
+                    "picUrl": "http://p4.music.126.net/LBnYDAUED2mD1veBvBnC8g==/5859297464524710.jpg",
+                    "tns": [],
+                    "pic": 5859297464524710
+                },
+                "dt": 245120,
+                "h": {
+                    "br": 320000,
+                    "fid": 0,
+                    "size": 9807456,
+                    "vd": -21900
+                },
+                "m": {
+                    "br": 192000,
+                    "fid": 0,
+                    "size": 5884491,
+                    "vd": -19300
+                },
+                "l": {
+                    "br": 128000,
+                    "fid": 0,
+                    "size": 3923008,
+                    "vd": -17600
+                },
+                "a": null,
+                "cd": "1",
+                "no": 10,
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": [],
+                "djId": 0,
+                "copyright": 2,
+                "s_id": 0,
+                "mark": 64,
+                "originCoverType": 1,
+                "originSongSimpleData": null,
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "rtype": 0,
+                "rurl": null,
+                "mst": 9,
+                "cp": 470025,
+                "mv": 0,
+                "publishTime": 1377187200007,
+                "privilege": {
+                    "id": 28188434,
+                    "fee": 8,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 128000,
+                    "dl": 0,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 999000,
+                    "fl": 128000,
+                    "toast": false,
+                    "flag": 2,
+                    "preSell": false
+                }
+            }
+        },
+        {
+            "playCount": 1,
+            "score": 100,
+            "song": {
+                "name": "MY ALL",
+                "id": 22737627,
+                "pst": 0,
+                "t": 0,
+                "ar": [
+                    {
+                        "id": 16405,
+                        "name": "浜崎あゆみ",
+                        "tns": [],
+                        "alias": []
+                    }
+                ],
+                "alia": [],
+                "pop": 100,
+                "st": 0,
+                "rt": "",
+                "fee": 8,
+                "v": 37,
+                "crbt": null,
+                "cf": "",
+                "al": {
+                    "id": 2087820,
+                    "name": "GUILTY",
+                    "picUrl": "http://p3.music.126.net/vKn4n26btSPAdpEgW7X61w==/109951164762304097.jpg",
+                    "tns": [
+                        "原罪"
+                    ],
+                    "pic_str": "109951164762304097",
+                    "pic": 109951164762304100
+                },
+                "dt": 322546,
+                "h": {
+                    "br": 320000,
+                    "fid": 0,
+                    "size": 12904533,
+                    "vd": -33100
+                },
+                "m": {
+                    "br": 192000,
+                    "fid": 0,
+                    "size": 7742737,
+                    "vd": -30500
+                },
+                "l": {
+                    "br": 128000,
+                    "fid": 0,
+                    "size": 5161839,
+                    "vd": -29100
+                },
+                "a": null,
+                "cd": "1",
+                "no": 12,
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": [],
+                "djId": 0,
+                "copyright": 0,
+                "s_id": 0,
+                "mark": 9007199255011456,
+                "originCoverType": 1,
+                "originSongSimpleData": null,
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "rtype": 0,
+                "rurl": null,
+                "mst": 9,
+                "cp": 457010,
+                "mv": 5442866,
+                "publishTime": 1199116800007,
+                "tns": [
+                    "我的一切"
+                ],
+                "privilege": {
+                    "id": 22737627,
+                    "fee": 8,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 128000,
+                    "dl": 0,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 999000,
+                    "fl": 128000,
+                    "toast": false,
+                    "flag": 69,
+                    "preSell": false
+                }
+            }
+        },
+        {
+            "playCount": 1,
+            "score": 100,
+            "song": {
+                "name": "もう少しだけ",
+                "id": 1840862630,
+                "pst": 0,
+                "t": 0,
+                "ar": [
+                    {
+                        "id": 33927412,
+                        "name": "YOASOBI",
+                        "tns": [],
+                        "alias": []
+                    }
+                ],
+                "alia": [
+                    "晨间新闻节目「闹钟电视」春季主题曲"
+                ],
+                "pop": 100,
+                "st": 0,
+                "rt": "",
+                "fee": 8,
+                "v": 6,
+                "crbt": null,
+                "cf": "",
+                "al": {
+                    "id": 126662089,
+                    "name": "もう少しだけ",
+                    "picUrl": "http://p3.music.126.net/seyhDwTzRNqFvYAw9FtJnw==/109951165930283941.jpg",
+                    "tns": [
+                        "只要多一点"
+                    ],
+                    "pic_str": "109951165930283941",
+                    "pic": 109951165930283940
+                },
+                "dt": 220200,
+                "h": {
+                    "br": 320000,
+                    "fid": 0,
+                    "size": 8810623,
+                    "vd": -60541
+                },
+                "m": {
+                    "br": 192000,
+                    "fid": 0,
+                    "size": 5286391,
+                    "vd": -57951
+                },
+                "l": {
+                    "br": 128000,
+                    "fid": 0,
+                    "size": 3524275,
+                    "vd": -56352
+                },
+                "a": null,
+                "cd": "01",
+                "no": 1,
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": [],
+                "djId": 0,
+                "copyright": 1,
+                "s_id": 0,
+                "mark": 270336,
+                "originCoverType": 0,
+                "originSongSimpleData": null,
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "rtype": 0,
+                "rurl": null,
+                "mst": 9,
+                "cp": 1416336,
+                "mv": 0,
+                "publishTime": 1620576000000,
+                "tns": [
+                    "只要多一点"
+                ],
+                "privilege": {
+                    "id": 1840862630,
+                    "fee": 8,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 128000,
+                    "dl": 0,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 999000,
+                    "fl": 128000,
+                    "toast": false,
+                    "flag": 4,
+                    "preSell": false
+                }
+            }
+        },
+        {
+            "playCount": 1,
+            "score": 100,
+            "song": {
+                "name": "春を告げる",
+                "id": 1486106274,
+                "pst": 0,
+                "t": 0,
+                "ar": [
+                    {
+                        "id": 35796201,
+                        "name": "yama",
+                        "tns": [],
+                        "alias": []
+                    }
+                ],
+                "alia": [],
+                "pop": 100,
+                "st": 0,
+                "rt": "",
+                "fee": 0,
+                "v": 5,
+                "crbt": null,
+                "cf": "",
+                "al": {
+                    "id": 96631151,
+                    "name": "春を告げる",
+                    "picUrl": "http://p4.music.126.net/ZjaJpSpQseBYutsAEaLhww==/109951165381343967.jpg",
+                    "tns": [],
+                    "pic_str": "109951165381343967",
+                    "pic": 109951165381343970
+                },
+                "dt": 196545,
+                "h": {
+                    "br": 320000,
+                    "fid": 0,
+                    "size": 7862901,
+                    "vd": -64124
+                },
+                "m": {
+                    "br": 192000,
+                    "fid": 0,
+                    "size": 4717758,
+                    "vd": -61549
+                },
+                "l": {
+                    "br": 128000,
+                    "fid": 0,
+                    "size": 3145186,
+                    "vd": -59926
+                },
+                "a": null,
+                "cd": "01",
+                "no": 1,
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": [],
+                "djId": 0,
+                "copyright": 0,
+                "s_id": 0,
+                "mark": 262144,
+                "originCoverType": 1,
+                "originSongSimpleData": null,
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "rtype": 0,
+                "rurl": null,
+                "mst": 9,
+                "cp": 663018,
+                "mv": 10944798,
+                "publishTime": 0,
+                "tns": [
+                    "宣告春天"
+                ],
+                "privilege": {
+                    "id": 1486106274,
+                    "fee": 0,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 320000,
+                    "dl": 320000,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 320000,
+                    "fl": 320000,
+                    "toast": false,
+                    "flag": 256,
+                    "preSell": false
+                }
+            }
+        },
+        {
+            "playCount": 1,
+            "score": 100,
+            "song": {
+                "name": "吹灭小山河",
+                "id": 1412559986,
+                "pst": 0,
+                "t": 0,
+                "ar": [
+                    {
+                        "id": 31862479,
+                        "name": "国风堂",
+                        "tns": [],
+                        "alias": []
+                    },
+                    {
+                        "id": 28863695,
+                        "name": "司南",
+                        "tns": [],
+                        "alias": []
+                    }
+                ],
+                "alia": [
+                    "独家国风自制企划《观风月·竹马篇》"
+                ],
+                "pop": 100,
+                "st": 0,
+                "rt": "",
+                "fee": 8,
+                "v": 12,
+                "crbt": null,
+                "cf": "",
+                "al": {
+                    "id": 84562289,
+                    "name": "观风月·竹马篇",
+                    "picUrl": "http://p4.music.126.net/taWBQliW8wLh_pqXElAeww==/109951164923015271.jpg",
+                    "tns": [],
+                    "pic_str": "109951164923015271",
+                    "pic": 109951164923015260
+                },
+                "dt": 186198,
+                "h": {
+                    "br": 320000,
+                    "fid": 0,
+                    "size": 7450166,
+                    "vd": -48400
+                },
+                "m": {
+                    "br": 192000,
+                    "fid": 0,
+                    "size": 4470117,
+                    "vd": -45806
+                },
+                "l": {
+                    "br": 128000,
+                    "fid": 0,
+                    "size": 2980093,
+                    "vd": -44067
+                },
+                "a": null,
+                "cd": "01",
+                "no": 2,
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": [],
+                "djId": 0,
+                "copyright": 0,
+                "s_id": 0,
+                "mark": 0,
+                "originCoverType": 1,
+                "originSongSimpleData": null,
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "rtype": 0,
+                "rurl": null,
+                "mst": 9,
+                "cp": 0,
+                "mv": 0,
+                "publishTime": 1577548800000,
+                "privilege": {
+                    "id": 1412559986,
+                    "fee": 8,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 128000,
+                    "dl": 0,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 999000,
+                    "fl": 128000,
+                    "toast": false,
+                    "flag": 64,
+                    "preSell": false
+                }
+            }
+        },
+        {
+            "playCount": 1,
+            "score": 100,
+            "song": {
+                "name": "花びらたちのマーチ",
+                "id": 1357775526,
+                "pst": 0,
+                "t": 0,
+                "ar": [
+                    {
+                        "id": 16152,
+                        "name": "Aimer",
+                        "tns": [],
+                        "alias": []
+                    }
+                ],
+                "alia": [],
+                "pop": 100,
+                "st": 0,
+                "rt": "",
+                "fee": 8,
+                "v": 18,
+                "crbt": null,
+                "cf": "",
+                "al": {
+                    "id": 78422025,
+                    "name": "Sun Dance",
+                    "picUrl": "http://p3.music.126.net/ucxKEgwsE8oVACLdanyttg==/109951165052444729.jpg",
+                    "tns": [],
+                    "pic_str": "109951165052444729",
+                    "pic": 109951165052444740
+                },
+                "dt": 192130,
+                "h": {
+                    "br": 320002,
+                    "fid": 0,
+                    "size": 7686313,
+                    "vd": -59991
+                },
+                "m": {
+                    "br": 192002,
+                    "fid": 0,
+                    "size": 4611805,
+                    "vd": -57497
+                },
+                "l": {
+                    "br": 128002,
+                    "fid": 0,
+                    "size": 3074551,
+                    "vd": -55917
+                },
+                "a": null,
+                "cd": "01",
+                "no": 6,
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": [],
+                "djId": 0,
+                "copyright": 1,
+                "s_id": 0,
+                "mark": 270336,
+                "originCoverType": 1,
+                "originSongSimpleData": null,
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "rtype": 0,
+                "rurl": null,
+                "mst": 9,
+                "cp": 2706476,
+                "mv": 0,
+                "publishTime": 1554825600000,
+                "privilege": {
+                    "id": 1357775526,
+                    "fee": 8,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 128000,
+                    "dl": 0,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 320000,
+                    "fl": 128000,
+                    "toast": false,
+                    "flag": 4,
+                    "preSell": false
+                }
+            }
+        },
+        {
+            "playCount": 1,
+            "score": 100,
+            "song": {
+                "name": "remember",
+                "id": 1311347592,
+                "pst": 0,
+                "t": 0,
+                "ar": [
+                    {
+                        "id": 12062125,
+                        "name": "Uru",
+                        "tns": [],
+                        "alias": []
+                    }
+                ],
+                "alia": [
+                    "剧场版动画《夏目友人帐: 缘结空蝉》主题曲"
+                ],
+                "pop": 100,
+                "st": 0,
+                "rt": null,
+                "fee": 8,
+                "v": 19,
+                "crbt": null,
+                "cf": "",
+                "al": {
+                    "id": 73470777,
+                    "name": "Remember",
+                    "picUrl": "http://p4.music.126.net/oGAFl40HQRJSnevq3j-DFg==/109951165050155419.jpg",
+                    "tns": [],
+                    "pic_str": "109951165050155419",
+                    "pic": 109951165050155420
+                },
+                "dt": 347167,
+                "h": {
+                    "br": 320001,
+                    "fid": 0,
+                    "size": 13886738,
+                    "vd": -48726
+                },
+                "m": {
+                    "br": 192001,
+                    "fid": 0,
+                    "size": 8332060,
+                    "vd": -46154
+                },
+                "l": {
+                    "br": 128001,
+                    "fid": 0,
+                    "size": 5554721,
+                    "vd": -44477
+                },
+                "a": null,
+                "cd": "1",
+                "no": 1,
+                "rtUrl": null,
+                "ftype": 0,
+                "rtUrls": [],
+                "djId": 0,
+                "copyright": 1,
+                "s_id": 0,
+                "mark": 270336,
+                "originCoverType": 1,
+                "originSongSimpleData": null,
+                "single": 0,
+                "noCopyrightRcmd": null,
+                "rtype": 0,
+                "rurl": null,
+                "mst": 9,
+                "cp": 2706476,
+                "mv": 10850756,
+                "publishTime": 1540828800000,
+                "privilege": {
+                    "id": 1311347592,
+                    "fee": 8,
+                    "payed": 0,
+                    "st": 0,
+                    "pl": 128000,
+                    "dl": 0,
+                    "sp": 7,
+                    "cp": 1,
+                    "subp": 1,
+                    "cs": false,
+                    "maxbr": 320000,
+                    "fl": 128000,
+                    "toast": false,
+                    "flag": 4,
+                    "preSell": false
+                }
+            }
+        }
+    ],
+    "code": 200
+}
