@@ -70,9 +70,9 @@ Page({
   },
   goSingleSong(e){
     const {keyword} =e.currentTarget.dataset
-    console.log(keyword);
+    //console.log(keyword);
     wx.navigateTo({
-      url: '/pages/singleSong/singleSong',
+      url: `/pages/singleSong/singleSong?keyword=${keyword}`,
     });
   },
   /**

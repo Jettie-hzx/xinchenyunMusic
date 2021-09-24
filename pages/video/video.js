@@ -84,20 +84,7 @@ Page({
     this.videoContext= wx.createVideoContext(vid)
     //this.videoContext.play()
   },
-  // handlePause(){
-  //   this.setData({
-  //     isPlayed:false
-  //   })
-  // },
-  // 实现点击视频任意位置播放暂停
-  // handleTogglePlay(){
-  //   let {isPlayed}=this.data;
-    
-  //   isPlayed?this.videoContext.pause():this.videoContext.play()
-  //   this.setData({
-  //     isPlayed:!isPlayed
-  //   })
-  // },
+  
   
   // 视频播放记录时间回调
   handleTimeUpdate(e){
@@ -114,6 +101,12 @@ Page({
 
     this.getVideoData(this.data.navId,++offset);
     this.setData({offset})
+  },
+  toSearch(){
+    wx.navigateTo({
+      url: '/pages/search/search',
+     
+    });
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

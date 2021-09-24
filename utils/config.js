@@ -1,6 +1,6 @@
 export default {
-    //host:'http://localhost:3000'
-     host:'https://autumnfish.cn/'
+    host:'http://localhost:3000'
+     //host:'https://autumnfish.cn/'
 }
 
 // var books=[

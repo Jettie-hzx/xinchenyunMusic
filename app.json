@@ -1,13 +1,14 @@
 {
   "pages": [
-    "pages/search/search",
     "pages/index/index",
+    "pages/search/search",
+    
     "pages/recommendSong/recommendSong",
     "pages/songDetail/songDetail",
     "pages/video/video",
     "pages/personal/personal",
-    "pages/login/login"
-   
+    "pages/login/login",
+    "pages/singleSong/singleSong"
   ],
   "requiredBackgroundModes": [
     "audio"

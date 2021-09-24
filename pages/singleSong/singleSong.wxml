@@ -1,0 +1,36 @@
+<view class="singleSongContainer">
+     <!-- 头部区域 -->
+    <view class="header">
+        <view class="searchInput">
+            <text class="iconfont icon-search1 searchIcon"></text>
+            <input type="text" value="{{searchContent}}" bindinput="handleSearch" />
+            <image class="clearImg" src="/static/images/cancel.png" hidden="{{!searchContent}}" catchtap="clearInput"></image>
+        </view>
+       
+    </view>
+    <view class="listContainer">
+        <view class="listHeader">
+            <text>播放全部</text>
+            <text>多选</text>
+        </view>
+
+        <scroll-view class="scrollList" scroll-y>
+            <view class="scrollItem" wx:for="{{singleSongList}}" wx:key="id"
+            bindtap="toSongDetail" data-item="{{item}}" data-index="{{index}}">
+                
+                <view class="musicInfo">
+                    <text class="musicName infoItem">{{item.name}}</text>
+                    <view class="author infoItem">
+                        <block>{{item.artists[0].name}}</block>
+                        <block wx:if="{{item.artists[1].name}}"> / {{item.artists[1].name}}</block>
+                        <block> - {{item.album.name}}</block>
+                    </view>    
+                </view>
+                <text class="iconfont icon-gengduo"
+              catchtap="showPopup"></text>
+            </view>
+        </scroll-view>
+    </view>
+</view>
+
+   

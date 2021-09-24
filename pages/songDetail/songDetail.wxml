@@ -13,7 +13,7 @@
     <view class="progressControl">
         <text class="liveTime">{{liveTime}}</text>
         <view class="barControl">
-            <view class="currentTimeBar" style="width:{{currentWidth+'%'}}"></view>
+            <view class="currentTimeBar" style="width:{{currentWidth+'rpx'}}"></view>
             <!-- <view class="currentTimeCircle" style="left:194rpx"></view> -->
         </view>
         <view class="duration">{{duration}}</view>

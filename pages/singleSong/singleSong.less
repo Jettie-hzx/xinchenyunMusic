@@ -1,0 +1,85 @@
+.singleSongContainer{
+    padding: 0 20rpx;
+}
+.header{
+    height: 80rpx;
+    display: flex;
+    //border: 1px solid red;
+    font-size: 38rpx;
+    line-height: 80rpx;
+    .searchInput{
+        flex: 1;
+        position: relative;
+        
+        .searchIcon{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            
+        }
+        input{
+            margin: 0 40rpx 0 60rpx;
+            height: 80rpx;
+            border-bottom: 1rpx solid #333;
+        }
+        .clearImg{
+            position: absolute;
+            right: 30rpx;
+            top: 15rpx;
+            width: 50rpx;
+            height: 50rpx;
+            z-index: 10;
+        }
+    }
+    
+}
+.listContainer{
+    position: relative;
+   margin-top: 10px;
+    background-color: #fff;
+}
+.listHeader{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
+    display: flex;
+    justify-content:space-between;
+    height: 80rpx;
+    line-height: 80rpx;
+   
+}
+
+.scrollItem{
+    position: relative;
+    display: flex;
+    height: 80rpx;
+    margin: 40rpx 0;
+    
+    .musicInfo{
+        display: flex;
+       width: 510rpx;
+        padding: 0 30rpx;
+        flex-direction: column;
+        //justify-content: space-around;
+        font-size: 24rpx;
+        .infoItem{
+            height: 40rpx;
+            line-height: 40rpx;
+              //width: 100%;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+        }
+       
+    }
+    .iconfont{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 60rpx;
+        text-align: right;
+        line-height: 80rpx;
+    }
+}

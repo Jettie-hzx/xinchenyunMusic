@@ -5,14 +5,13 @@
         <view class="searchInput">
             <text class="iconfont icon-search1 searchIcon"></text>
             <input type="text" placeholder="{{placeholderContent}}" 
-            placeholder-class="inputPlaceholder"
             value="{{searchContent}}"
             bindinput="handleSearch" />
             <image class="clearImg" src="/static/images/cancel.png"
             hidden="{{!searchContent}}"
             catchtap="clearInput"></image>
         </view>
-        <text class="cancel">取消</text>
+        
     </view>
    
     <!-- 热搜 -->
@@ -20,7 +19,9 @@
         <view class="title">热搜榜</view>
         <view class="hotList">
             <view class="hotItem" 
-            wx:for="{{hotList}}" wx:key="searchWord">
+            wx:for="{{hotList}}" wx:key="searchWord"
+            data-keyword="{{item.searchWord}}"
+            bindtap="goSingleSong">
                 <text class="order">{{index+1}}</text>
                 <text class="searchWord {{item.iconUrl?'searchWord1':'searchWord2'}}">{{item.searchWord}}</text>
                 <image  wx:if="{{item.iconUrl}}" class="iconImg" src="{{item.iconUrl}}"
@@ -37,7 +38,7 @@
         <block wx:else>
             <view class="searchItem" wx:for="{{searchList}}"
             data-keyword="{{item.keyword}}"
-        wx:key="feature" bindtap="goSingleSong" >
+        wx:key="keyword" bindtap="goSingleSong" >
             <text class="iconfont icon-search1 searchIcon"></text>
             <text class="searchName"> {{item.keyword}} </text>
         </view>

@@ -59,7 +59,7 @@ Page({
     this.backgroundAudioManager.onStop(()=>this.changePlayState(false))
     this.backgroundAudioManager.onTimeUpdate(()=>{
       let liveTime=moment(this.backgroundAudioManager.currentTime).format("mm:ss")
-      let currentWidth=this.backgroundAudioManager.currentTime/this.backgroundAudioManager.duration*100
+      let currentWidth=this.backgroundAudioManager.currentTime/this.backgroundAudioManager.duration*520
       this.setData({
         liveTime,
         currentWidth
@@ -68,25 +68,28 @@ Page({
     this.backgroundAudioManager.onEnded(()=>{
       //this.changePlayState(false)
       this. pubsubMsg("next")
-      this.setData({
-        liveTime:"00:00",
-        currentWidth:0
-      })
+      
     })
   },
   //获取上个页面传递的音乐详情
-  getSongDetail() {
+ getSongDetail() {
     const eventChannel = this.getOpenerEventChannel()
     eventChannel.on('sendSongDetail', data => {
       //console.log(data);
       const musicInfo=data.data
+      //console.log(musicInfo);
       this.setMusicInfo(musicInfo)
     })
   },
-  setMusicInfo(musicInfo){
-    let picUrl = musicInfo.album.picUrl
+  async setMusicInfo(musicInfo){
+   
+   
+    let picUrl = musicInfo.album.picUrl 
+    //console.log(picUrl);
+    //|| songData.songs[0].al.picUrl
     let {id,artists,name:title,} = musicInfo
     let duration=moment(musicInfo.duration/1000).format("mm:ss")
+    
     let author = ""
     artists.length == 1?author = artists[0].name
     :author = artists[0].name + "/" + artists[1].name
@@ -96,7 +99,10 @@ Page({
       author,
       id,
       title,
-      duration
+      duration,
+      liveTime:"00:00",
+      currentWidth:0
+     
     })
   },
   setMusicInstance(){
@@ -126,10 +132,10 @@ Page({
   handleSwitch(e){
     
     const type=e.currentTarget.id
-    //backgroundAudioManager.stop()
-   this. pubsubMsg(type)
+    this. pubsubMsg(type)
   },
   pubsubMsg(type){
+    
     PubSub.subscribe("musicInfo",async (_,musicInfo)=>{
       this.setMusicInfo(musicInfo)
       await this.getSongPlay(musicInfo.id)
@@ -144,6 +150,12 @@ Page({
   async getSongPlay(id) {
     const res = await requset("/song/url", { id })
     let songUrl = res.data[0].url
+    if(!this.data.picUrl){
+      const songData=await requset("/song/detail",{ids:id})
+        this.setData({
+          picUrl:songData.songs[0].al.picUrl
+        })
+     }
     //console.log(res);
     this.setData({
       songUrl
