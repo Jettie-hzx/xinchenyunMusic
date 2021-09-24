@@ -1,9 +1,10 @@
 // pages/songDetail/songDetail.js
 import PubSub from "pubsub-js"
 import moment from "moment-js"
-import requset from "../../utils/request"
+import {getSongDetail,getSongPlay,getLyric} from "../../utils/request"
 
 const appInstance=getApp().globalData
+let canMove=true
 Page({
 
   /**
@@ -18,7 +19,12 @@ Page({
     author: "",
     liveTime:"00:00",
     duration:"00:00",
-    currentWidth:0
+    currentWidth:0,
+    showLyric:false,
+    lyricText:[],
+    lyricTime:[],
+    currentIndex:0,
+    scrollTop:300
   },
 
   /**
@@ -31,7 +37,7 @@ Page({
     })
  
     await this.getSongDetail(id)
-    
+    //this.getSongDetail(id)
     appInstance.musicId===this.data.id?
       this.setData({isPlay:appInstance.isMusicPlay}):
       appInstance.countPlay=0
@@ -42,7 +48,9 @@ Page({
     if(!appInstance.countPlay++){
       //若退出songDetail再重进播放的是同亿歌曲无需重复发请求
      //console.log("fsdfsfsfs");
-     await this.getSongPlay(this.data.id)
+    await this.getSongPlay(this.data.id)
+    //this.getSongPlay(this.data.id)
+     this.getLyric(id)
       //保存2次若为同一首歌的url
       appInstance.songUrl=this.data.songUrl
       this.setMusicInstance()
@@ -63,11 +71,21 @@ Page({
    })
    this.backgroundAudioManager.onStop(()=>this.changePlayState(false))
    this.backgroundAudioManager.onTimeUpdate(()=>{
+     let currentTime=this.backgroundAudioManager.currentTime
+     
      let liveTime=moment(this.backgroundAudioManager.currentTime).format("mm:ss")
      let currentWidth=this.backgroundAudioManager.currentTime/this.backgroundAudioManager.duration*520
+     let {lyricTime,scrollTop,currentIndex}=this.data
+     if(currentTime>lyricTime[currentIndex]){
+        currentIndex++
+        scrollTop-=70
+     }
+     
      this.setData({
        liveTime,
-       currentWidth
+       currentWidth,
+       currentIndex,
+       scrollTop
      })
    });
    this.backgroundAudioManager.onEnded(()=>{
@@ -85,7 +103,7 @@ Page({
   },
   
   async getSongDetail(id) {
-      const res=await requset("/song/detail",{ids:id})
+      const res=await getSongDetail(id)
       let musicInfo=res.songs[0]
       //console.log(musicInfo);
       
@@ -107,7 +125,9 @@ Page({
       duration,
       title,
       liveTime:"00:00",
-      currentWidth:0
+      currentWidth:0,
+      currentIndex:0,
+      scrollTop:300
     })
   },
   //设置音乐播放实例
@@ -140,6 +160,7 @@ Page({
       
       await this.getSongDetail(musicId)
       await this.getSongPlay(musicId)
+      this.getLyric(musicId)
       this.setMusicInstance()
       this.handleMusicPlay()
       PubSub.unsubscribe("musicId")
@@ -149,12 +170,80 @@ Page({
   },
   //获取音乐链接
   async getSongPlay(id) {
-    const res = await requset("/song/url", { id })
+    const res = await getSongPlay(id)
     let songUrl = res.data[0].url
 
     this.setData({
       songUrl
     })
+  },
+  async getLyric(id){
+    const res=await getLyric(id)
+    let lyric=res.lrc.lyric
+    this.lyricFormat(lyric)
+    //this.setData({lyric})
+    
+  },
+  showLyric(){
+    let showLyric=!this.data.showLyric
+    this.setData({showLyric})
+  },
+  lyricFormat(lyric){
+    let reg = /[\[|[0-9\:\.]|]]/gi; // 正则匹配去除 []
+    let res= lyric.replace(reg, "");
+   
+    let lyricText=res.split("]").slice(1)
+    
+    var reg2 = /\[(.+?)\]/g; // 正则匹配出时间
+    let lyricTime =lyric.match(reg2); // match 选中匹配成功的内容
+    for (let i = 0; i < lyricTime.length; i++) {
+      lyricTime[i] = lyricTime[i].slice(1, 9); // slice 截取
+      lyricTime[i] =
+        parseFloat(lyricTime[i].slice(0, 2), 2) * 60 +
+        parseFloat(lyricTime[i].slice(3, 8), 2); // 截取分秒计算秒数
+    }
+    this.setData({
+      lyricText,
+      lyricTime:lyricTime.slice(1)
+    })
+  },
+  sliderChange(e){
+    
+    let currentWidth=e.detail.value
+    // this.backgroundAudioManager.onTimeUpdate(()=>{
+      this.setData({
+        currentWidth
+        })
+    // });
+    
+    let currentTime=currentWidth*this.backgroundAudioManager.duration/520
+    let liveTime=moment(currentTime).format("mm:ss")
+    let {lyricTime}=this.data
+    let index=lyricTime.findIndex(item=>item > currentTime)-1
+    
+    this.setData({
+     
+      currentIndex:index,
+      scrollTop:300-70*index,
+      liveTime
+    })
+     
+    this.backgroundAudioManager.seek(currentTime)
+    
+  },
+  //太过频繁，进行节流
+  sliderChanging(e){
+    //为了一开始就能执行一次
+    if(canMove){
+      this.sliderChange(e)
+     
+    }else{
+      return
+    }
+    canMove=false
+    setTimeout(()=>{
+      canMove=true
+    },250)
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

@@ -1,5 +1,5 @@
 // pages/video/video.js
-import request from '../../utils/request'
+import {getVideoList,getVideoData} from '../../utils/request'
 Page({
 
   /**
@@ -28,7 +28,7 @@ Page({
   },
   
   async getVideoList(){
-    const res=await request("/video/group/list")
+    const res=await getVideoList()
     
     const videoList=res.data.slice(0,15)
     this.setData({
@@ -39,7 +39,7 @@ Page({
   },
   async getVideoData(navId,offset=0){
     if(!navId) return
-    const res=await request("/video/group",{id:navId,offset})
+    const res=await getVideoData(navId,offset)
     const msg="暂无推荐视频，请稍后再试"
     if(res.msg===msg){
       return wx.showToast({

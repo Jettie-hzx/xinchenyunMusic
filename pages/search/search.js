@@ -1,17 +1,17 @@
 // pages/search/search.js
-import request from "../../utils/request"
+import { getSearchDefault, getSearchHot, getSearchSuggest } from "../../utils/request"
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    placeholderContent:"",
-    hotList:[],
-    searchContent:"",
-    searchList:[],
-    historyList:[],
-    isFound:true
+    placeholderContent: "",
+    hotList: [],
+    searchContent: "",
+    searchList: [],
+    historyList: [],
+    isFound: true
   },
 
   /**
@@ -19,57 +19,57 @@ Page({
    */
   onLoad: function (options) {
     this.getInitData()
-    
+
   },
-  async getInitData(){
-    const placeholderContent = await request("/search/default")
-    const hotDetail=await request("/search/hot/detail")
-    
+  async getInitData() {
+    const placeholderContent = await getSearchDefault()
+    const hotDetail = await getSearchHot()
+
     this.setData({
-      placeholderContent:placeholderContent.data.showKeyword,
-      hotList:hotDetail.data
+      placeholderContent: placeholderContent.data.showKeyword,
+      hotList: hotDetail.data
     })
   },
-  handleSearch(e){
-    
+  handleSearch(e) {
+
     //console.log(e.detail.value);
     this.setData({
-      searchContent:e.detail.value
+      searchContent: e.detail.value
     })
-    
+
     this.getSearchInfo()
   },
-  async getSearchInfo(){
-    let {searchContent}=this.data
-    if(!searchContent.trim()){
+  async getSearchInfo() {
+    let { searchContent } = this.data
+    if (!searchContent.trim()) {
       this.setData({
-        isFound:false,
-        searchList:[]
+        isFound: false,
+        searchList: []
       })
       return
     }
     this.setData({
-      isFound:true
+      isFound: true
     })
-    const res=await request("/search/suggest",{keywords:searchContent,type:'mobile'})
+    const res = await getSearchSuggest(searchContent, 'mobile')
     //console.log(res);
-    let searchList=res.result.allMatch
+    let searchList = res.result.allMatch
     this.setData({
       searchList
-      
+
     })
-    
+
   },
 
-  clearInput(){
-    
+  clearInput() {
+
     this.setData({
-      searchContent:"",
-      searchContent:[]
+      searchContent: "",
+      searchContent: []
     })
   },
-  goSingleSong(e){
-    const {keyword} =e.currentTarget.dataset
+  goSingleSong(e) {
+    const { keyword } = e.currentTarget.dataset
     //console.log(keyword);
     wx.navigateTo({
       url: `/pages/singleSong/singleSong?keyword=${keyword}`,

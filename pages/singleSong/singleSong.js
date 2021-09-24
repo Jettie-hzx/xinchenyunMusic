@@ -1,6 +1,8 @@
 // pages/singleSong/singleSong.js
 import PubSub from "pubsub-js"
-import request from "../../utils/request"
+
+//import  switchType  from "../../utils/pubsub-mytool"
+import {getSearch} from "../../utils/request"
 Page({
 
   /**
@@ -20,6 +22,8 @@ Page({
     //console.log(options);
     this.setData({searchContent})
     this.getSingleSong()
+   
+    //switchType(singleSongList)
     PubSub.subscribe("switchType", (_, type) => {
       let { singleSongList, index } = this.data
       const length = singleSongList.length
@@ -38,7 +42,7 @@ Page({
     })
   },
   async getSingleSong(){
-    const res=await request("/search",{keywords:this.data.searchContent})
+    const res=await getSearch(this.data.searchContent)
     this.setData({
       singleSongList:res.result.songs
     })
@@ -49,11 +53,7 @@ Page({
     this.setData({ index })
     wx.navigateTo({
       url: `/pages/songDetail/songDetail?id=${id}`
-      // success: (res) => {
-      //   res.eventChannel.emit("sendSongDetail", {
-      //     data: item
-      //   })
-      // }
+      
     });
   },
   /**

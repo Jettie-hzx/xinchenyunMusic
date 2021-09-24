@@ -1,5 +1,5 @@
 // pages/login/login.js
-import request from '../../utils/request'
+import {loginByPhone} from '../../utils/request'
 Page({
 
   /**
@@ -47,7 +47,7 @@ Page({
          icon:"none"
        })
      }
-     const res=await request("/login/cellphone",{phone,password,isLogin:true})
+     const res=await loginByPhone(phone,password)
      
      if(res.code===200){
       wx.showToast({

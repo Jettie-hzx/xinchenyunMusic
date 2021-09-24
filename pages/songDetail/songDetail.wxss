@@ -1,3 +1,4 @@
+/* 播放界面毛玻璃效果 */
 .songDetailContainer {
   height: 100%;
   background-color: #190d02d6;
@@ -9,22 +10,56 @@
   color: #ccc;
   font-size: 30rpx;
 }
-.circle {
+.sing-show {
+  width: 100%;
+  height: 900rpx;
+}
+.sing-show .singCon {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.sing-show .songLyric {
+  color: #fff;
+}
+.sing-show .songLyric .lyricContainer {
+  position: relative;
+  width: 600rpx;
+  height: 800rpx;
+  margin-top: 100rpx;
+  text-align: center;
+  overflow: hidden;
+  font-size: 33rpx;
+  line-height: 72rpx;
+}
+.sing-show .songLyric .lyricContainer .lyricMove {
+  position: absolute;
+  width: 600rpx;
+}
+.sing-show .songLyric .lyricContainer .lyricActive {
+  color: #d43c33;
+}
+.sing-show .songLyric .nolyric {
+  margin-top: 400rpx;
+}
+.circle {
+  position: absolute;
   z-index: 20;
-  width: 60rpx;
-  height: 60rpx;
+  width: 70rpx;
+  height: 70rpx;
   border-radius: 50%;
   background-color: #fff;
-  margin: 30rpx 0;
+  margin-top: 30rpx;
 }
 .needle {
-  position: relative;
-  left: 60rpx;
-  top: -50rpx;
+  position: absolute;
+  left: 338rpx;
+  top: 60rpx;
   z-index: 10;
-  width: 192rpx;
-  height: 274rpx;
+  width: 185rpx;
+  height: 264rpx;
   transform-origin: 40rpx 0;
   transform: rotate(-25deg);
   transition: transform 1s;
@@ -33,8 +68,8 @@
   transform: rotate(0deg);
 }
 .discContainer {
-  position: relative;
-  top: -180rpx;
+  position: absolute;
+  top: 200rpx;
   width: 598rpx;
   height: 598rpx;
 }
@@ -64,7 +99,7 @@
 }
 .progressControl {
   position: relative;
-  top: -32rpx;
+  top: 50rpx;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -77,25 +112,15 @@
 .progressControl .barControl {
   position: relative;
   width: 520rpx;
-  height: 1rpx;
-  background-color: rgba(255, 255, 255, 0.5);
+  height: 10rpx;
 }
-.progressControl .barControl .currentTimeBar {
+.progressControl .barControl .sliderBar {
   position: absolute;
-  top: 0;
+  top: -16rpx;
   left: 0;
   height: 1px;
-  background-color: red;
-}
-.progressControl .barControl .currentTimeBar::after {
-  content: "";
-  position: absolute;
-  top: -6rpx;
-  right: -6px;
-  width: 12rpx;
-  height: 12rpx;
-  border-radius: 50%;
-  background-color: #fff;
+  margin: 0;
+  width: 520rpx;
 }
 .progressControl .duration {
   color: rgba(255, 255, 255, 0.5);

@@ -1,5 +1,5 @@
 import PubSub from "pubsub-js";
-import request from "../../utils/request"
+import {getRecommendSong} from "../../utils/request"
 
 // pages/recommendSong/recommendSong.js
 Page({
@@ -57,7 +57,7 @@ Page({
     })
   },
   async getRecommendSong() {
-    const res = await request("/recommend/songs")
+    const res = await getRecommendSong()
     //console.log(res);
     const recommondSongs = res.recommend.map(item => {
       return {

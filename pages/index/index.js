@@ -1,5 +1,5 @@
 // pages/index/index.js
-import request from '../../utils/request'
+import {getBanner,getRecommends,getTopList} from '../../utils/request'
 Page({
 
   /**
@@ -30,12 +30,12 @@ Page({
     this.setData({current})
   },
   async getBanners() {
-    const {banners}=await request('/banner',{type:2})
+    const {banners}=await getBanner(1)
     this.setData({banners})
     
   },
   async getRecommends() {
-    const {result:recommends}=await request("/personalized",{limit:10})
+    const {result:recommends}=await getRecommends(10)
     this.setData({recommends})
     
   },
@@ -43,7 +43,7 @@ Page({
     let index = 0
     let topList = []
     while (index < 5) {
-      const { playlist: topListData } = await request('/top/list', { idx: index++ })
+      const { playlist: topListData } = await getTopList(index++)
       let topListItem = {
         name: topListData.name,
         tracks: topListData.tracks.slice(0, 3)

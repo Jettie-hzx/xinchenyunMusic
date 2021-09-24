@@ -1,4 +1,4 @@
-import request from "../../utils/request";
+import {getUserRecentPlayList} from "../../utils/request";
 
 let startY = 0; // 手指起始的坐标
 let moveY = 0; // 手指移动的坐标
@@ -33,7 +33,7 @@ Page({
   },
   // 获取用户播放记录的功能函数
   async getUserRecentPlayList(userId){
-    let recentPlayListData = await request('/user/record', {uid: userId, type: 0});
+    let recentPlayListData = await getUserRecentPlayList(userId,0)
     let index = 0;
     let recentPlayList = recentPlayListData.allData.splice(0, 10).map(item => {
       item.id = index++;
