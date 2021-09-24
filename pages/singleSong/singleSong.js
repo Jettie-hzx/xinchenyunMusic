@@ -32,9 +32,9 @@ Page({
       }
 
       this.setData({ index })
-      let musicInfo = singleSongList[index]
+      let musicId = singleSongList[index].id
 
-      PubSub.publish("musicInfo", musicInfo)
+      PubSub.publish("musicId", musicId)
     })
   },
   async getSingleSong(){
@@ -45,15 +45,15 @@ Page({
   },
   toSongDetail(e) {
 
-    const { item, index } = e.currentTarget.dataset
+    const { id, index } = e.currentTarget.dataset
     this.setData({ index })
     wx.navigateTo({
-      url: `/pages/songDetail/songDetail`,
-      success: (res) => {
-        res.eventChannel.emit("sendSongDetail", {
-          data: item
-        })
-      }
+      url: `/pages/songDetail/songDetail?id=${id}`
+      // success: (res) => {
+      //   res.eventChannel.emit("sendSongDetail", {
+      //     data: item
+      //   })
+      // }
     });
   },
   /**

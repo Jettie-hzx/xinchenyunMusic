@@ -14,7 +14,7 @@ Page({
     id: "",
     picUrl: "",
     songUrl: "",
-    title: "",
+    title:"",
     author: "",
     liveTime:"00:00",
     duration:"00:00",
@@ -25,8 +25,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: async function (options) {
-    // 获取页面传参
-    this.getSongDetail()
+    let id=options.id
+    this.setData({
+      id
+    })
+ 
+    await this.getSongDetail(id)
     
     appInstance.musicId===this.data.id?
       this.setData({isPlay:appInstance.isMusicPlay}):
@@ -35,82 +39,42 @@ Page({
     //console.log(appInstance.isMusicPlay,appInstance.countPlay);
     this.backgroundAudioManager = wx.getBackgroundAudioManager()
     //判断进入的页面是否跟上次一致来确定是否需要自动播放
-    
-    
     if(!appInstance.countPlay++){
       //若退出songDetail再重进播放的是同亿歌曲无需重复发请求
      //console.log("fsdfsfsfs");
      await this.getSongPlay(this.data.id)
       //保存2次若为同一首歌的url
       appInstance.songUrl=this.data.songUrl
+      this.setMusicInstance()
       this.handleMusicPlay()
       //backgroundAudioManager设置src就会自动播放，要放在判断里面
-      this.setMusicInstance()
+      
     }
-    
-    /**
+    this.watchBackAudio()
+  },
+  /**
      * 监视系统背景下播放暂停回调
      */
-     this.backgroundAudioManager.onPause(()=>this.changePlayState(false))
-     this.backgroundAudioManager.onPlay(()=>{
-      this.changePlayState(true)
-      appInstance.musicId=this.data.id
-    })
-    this.backgroundAudioManager.onStop(()=>this.changePlayState(false))
-    this.backgroundAudioManager.onTimeUpdate(()=>{
-      let liveTime=moment(this.backgroundAudioManager.currentTime).format("mm:ss")
-      let currentWidth=this.backgroundAudioManager.currentTime/this.backgroundAudioManager.duration*520
-      this.setData({
-        liveTime,
-        currentWidth
-      })
-    });
-    this.backgroundAudioManager.onEnded(()=>{
-      //this.changePlayState(false)
-      this. pubsubMsg("next")
-      
-    })
-  },
-  //获取上个页面传递的音乐详情
- getSongDetail() {
-    const eventChannel = this.getOpenerEventChannel()
-    eventChannel.on('sendSongDetail', data => {
-      //console.log(data);
-      const musicInfo=data.data
-      //console.log(musicInfo);
-      this.setMusicInfo(musicInfo)
-    })
-  },
-  async setMusicInfo(musicInfo){
-   
-   
-    let picUrl = musicInfo.album.picUrl 
-    //console.log(picUrl);
-    //|| songData.songs[0].al.picUrl
-    let {id,artists,name:title,} = musicInfo
-    let duration=moment(musicInfo.duration/1000).format("mm:ss")
-    
-    let author = ""
-    artists.length == 1?author = artists[0].name
-    :author = artists[0].name + "/" + artists[1].name
-    wx.setNavigationBarTitle({title})
-    this.setData({
-      picUrl,
-      author,
-      id,
-      title,
-      duration,
-      liveTime:"00:00",
-      currentWidth:0
+  watchBackAudio(){
+    this.backgroundAudioManager.onPause(()=>this.changePlayState(false))
+    this.backgroundAudioManager.onPlay(()=>{
+     this.changePlayState(true)
+     appInstance.musicId=this.data.id
+   })
+   this.backgroundAudioManager.onStop(()=>this.changePlayState(false))
+   this.backgroundAudioManager.onTimeUpdate(()=>{
+     let liveTime=moment(this.backgroundAudioManager.currentTime).format("mm:ss")
+     let currentWidth=this.backgroundAudioManager.currentTime/this.backgroundAudioManager.duration*520
+     this.setData({
+       liveTime,
+       currentWidth
+     })
+   });
+   this.backgroundAudioManager.onEnded(()=>{
+     //this.changePlayState(false)
+     this. pubsubMsg("next")
      
-    })
-  },
-  setMusicInstance(){
-
-    this.backgroundAudioManager.src = this.data.songUrl || appInstance.songUrl
-    this.backgroundAudioManager.title = this.data.title
-    this.backgroundAudioManager.coverImgUrl = this.data.picUrl
-    this.backgroundAudioManager.singer = this.data.author
+   })
   },
   //修改播放状态的功能函数
   changePlayState(isPlay){
@@ -119,6 +83,42 @@ Page({
     appInstance.isMusicPlay=isPlay
     
   },
+  
+  async getSongDetail(id) {
+      const res=await requset("/song/detail",{ids:id})
+      let musicInfo=res.songs[0]
+      //console.log(musicInfo);
+      
+      this.setMusicInfo(musicInfo)
+    
+  },
+  //设置音乐信息
+  setMusicInfo(musicInfo){
+    let picUrl = musicInfo.al.picUrl
+    let {ar,name:title} = musicInfo
+    let duration=moment(musicInfo.dt/1000).format("mm:ss")
+    let author = ""
+    ar.length == 1?author = ar[0].name
+    :author = ar[0].name + "/" + ar[1].name
+    wx.setNavigationBarTitle({title})
+    this.setData({
+      picUrl,
+      author,
+      duration,
+      title,
+      liveTime:"00:00",
+      currentWidth:0
+    })
+  },
+  //设置音乐播放实例
+  setMusicInstance(){
+    const {songUrl,title,picUrl,author} =this.data
+    this.backgroundAudioManager.src = songUrl || appInstance.songUrl
+    this.backgroundAudioManager.title = title
+    this.backgroundAudioManager.coverImgUrl = picUrl
+    this.backgroundAudioManager.singer = author
+  },
+  
   // 控制音乐播放暂停回调
   handleMusicPlay() {
     let isPlay = this.data.isPlay
@@ -136,12 +136,13 @@ Page({
   },
   pubsubMsg(type){
     
-    PubSub.subscribe("musicInfo",async (_,musicInfo)=>{
-      this.setMusicInfo(musicInfo)
-      await this.getSongPlay(musicInfo.id)
+    PubSub.subscribe("musicId",async (_,musicId)=>{
+      
+      await this.getSongDetail(musicId)
+      await this.getSongPlay(musicId)
       this.setMusicInstance()
       this.handleMusicPlay()
-      PubSub.unsubscribe("musicInfo")
+      PubSub.unsubscribe("musicId")
     })
     //发布消息给recommend页面
     PubSub.publish("switchType",type)
@@ -150,13 +151,7 @@ Page({
   async getSongPlay(id) {
     const res = await requset("/song/url", { id })
     let songUrl = res.data[0].url
-    if(!this.data.picUrl){
-      const songData=await requset("/song/detail",{ids:id})
-        this.setData({
-          picUrl:songData.songs[0].al.picUrl
-        })
-     }
-    //console.log(res);
+
     this.setData({
       songUrl
     })
